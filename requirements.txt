@@ -1,0 +1,119 @@
+# Snippet Tool - Pinned Dependencies
+# Python 3.11 - DO NOT DEVIATE
+# Verified working configuration as of 2026-03-23
+# All versions tested and compatible with each other
+
+# ============================================================
+# CORE DEPENDENCIES (Directly imported)
+# ============================================================
+
+# GUI Framework
+PyQt5==5.15.9
+PyQt5-sip==12.18.0
+
+# Screenshot Capture
+mss==9.0.1
+
+# Image Processing
+Pillow==10.1.0
+
+# Hotkey Support
+keyboard==0.13.5
+
+# ============================================================
+# ML/OCR Stack (torch + easyocr)
+# ============================================================
+
+# Deep Learning Framework
+torch==2.0.0
+torchvision==0.15.0
+
+# Optical Character Recognition
+easyocr==1.7.2
+
+# Required by easyocr (do not remove)
+numpy==1.26.4
+scipy==1.17.1
+opencv-python-headless==4.8.1.78
+pyclipper==1.3.0.post6
+python-bidi==0.6.7
+PyYAML==6.0
+scikit-image==0.22.0
+Shapely==2.0.2
+
+# ============================================================
+# CRITICAL CONSTRAINTS (Why these versions exist)
+# ============================================================
+
+# Python 3.11
+#   - Only tested version
+#   - 3.12+ may have compatibility issues with PyQt5/torch
+
+# torch 2.0.0
+#   - Stable, no Windows DLL issues (2.1+ has MKL failures)
+#   - numpy 1.26.4 compatible
+#   - All tests pass
+
+# numpy 1.26.4 (CRITICAL)
+#   - MUST be 1.26.x (not 2.0+)
+#   - torch 2.0.0 requires numpy<2
+#   - easyocr requires numpy compatible with torch
+
+# opencv-python-headless 4.8.1.78
+#   - Only version that works with numpy 1.26.4
+#   - Do NOT upgrade to 4.13+ (requires numpy>=2)
+#   - Headless = no display required
+
+# easyocr 1.7.2
+#   - Works with torch 2.0.0
+#   - Do NOT upgrade (may require torch 2.1+)
+#   - Requires python-bidi >= 0.5.0 (get_display at module level)
+
+# python-bidi 0.6.7 (CRITICAL)
+#   - MUST be >= 0.5.0 for easyocr 1.7.2 compatibility
+#   - python-bidi 0.4.2 causes: "cannot import name 'get_display' from 'bidi'"
+#   - easyocr expects: from bidi import get_display (not from bidi.algorithm)
+#   - Version 0.6.7 has correct module-level exports
+#   - Tested working: OCR detects prices correctly
+
+# pyclipper 1.3.0.post6
+#   - Version 1.3.3 does not exist in PyPI
+#   - 1.3.0.post6 is the latest 1.3.x available and works
+#   - Required by easyocr for polygon operations
+
+# PyQt5 5.15.9
+#   - Stable, no deprecation warnings
+#   - Works perfectly with the GUI
+
+# ============================================================
+# STRICT RULES
+# ============================================================
+
+# NEVER change these without testing:
+# DO NOT: pip install numpy==2.0 (breaks everything)
+# DO NOT: pip install torch==2.1 (DLL errors on Windows)
+# DO NOT: pip install opencv-python-headless==4.13+ (needs numpy>=2)
+# DO NOT: pip install easyocr==1.8+ (needs torch 2.1+)
+# DO NOT: Use Python 3.12+ (compatibility unknown)
+
+# If you change any version, test with:
+# python verify_env.py
+
+# ============================================================
+# ALL DEPENDENCIES INCLUDED
+# ============================================================
+
+# Direct imports:
+#   - PyQt5 (GUI)
+#   - torch (ML backend)
+#   - easyocr (OCR/price detection)
+#   - mss (screenshot)
+#   - Pillow (images)
+#   - keyboard (hotkeys)
+
+# Transitive (required by above):
+#   - numpy, scipy, opencv, scikit-image, Shapely, yaml, pyclipper, bidi
+
+# NOT NEEDED (removed from old version):
+#   - python-dateutil
+#   - pyperclip

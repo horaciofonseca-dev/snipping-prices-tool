@@ -1,0 +1,59 @@
+# Virtual Environment
+venv/
+env/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Large compiled/dependency folders (created by setup_venv.bat)
+portable_app_v2/
+SnippetTool_Standalone/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (generated at runtime)
+metadata.json
+magazines.json
+products.json
+.backups/
+
+# Temporary/generated files
+*.spec
+check_environment.bat
+launch.bat
+generate_capstone_visuals.py
+ocr_handler.py
+snipping_tool.py
+BAT_LAUNCH_DIAGNOSTIC_REPORT.md
+SESSION_6_COMPLETION_SUMMARY.txt
+DOCUMENTATION_UPDATE_SUMMARY.txt
+*.txt
+CAPSTONE_IMPLEMENTATION_GUIDE.md
+CAPSTONE_README.md
+CAPSTONE_ROADMAP.md
+COMPLETE_IMPLEMENTATION_SUMMARY.md
+IMPLEMENTATION_*.md
+ROADMAP_*.md
+PROJECT_STATUS.md
+SETUP_INSTRUCTIONS.md
+USER_GUIDE.md
+PRODUCT_BRAND_*.md
+BRAND_AUTOCOMPLETE_*.md
+EXPORT_DOCUMENTATION.md
+DELIVERABLES_CHECKLIST.md
+TEST_REPORT_*.md
+_archive/
+.claude/
