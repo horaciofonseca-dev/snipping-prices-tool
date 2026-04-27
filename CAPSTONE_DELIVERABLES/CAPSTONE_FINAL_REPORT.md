@@ -164,7 +164,7 @@ Three distinct baskets were analyzed:
 ### 4.2 Advantages Over Traditional Methods
 
 | Method | Speed | Accuracy | Scale | Cost |
-|--------|-------|----------|-------|------|
+|---|---|---|---|---|
 | Manual Price Collection | Slow | High | Limited | High |
 | Government Surveys | Very Slow | Medium | Large | Very High |
 | **Snipper Tool** | **Fast** | **High** | **Scalable** | **Low** |
@@ -275,6 +275,7 @@ This creates a **synthetic dataset that accurately reflects real market conditio
 [INSERT VISUALIZATION: 02_affordability_cliffs.png - COLOR-CODED BY AFFORDABILITY STATUS]
 
 **SMIC Worker (€21,000/year = €1,750/month):**
+
 | Basket | Monthly | % of Income | Status |
 |--------|---------|-------------|--------|
 | Official | €68.67 | 3.9% | Excellent |
@@ -284,6 +285,7 @@ This creates a **synthetic dataset that accurately reflects real market conditio
 **Analysis:** A SMIC worker on the real complete basket spends €303.65 on food. With rent (€600-800), utilities (€150), transport (€100), and childcare (€200+), there is barely €150-200 remaining for everything else.
 
 **Low Income (€28,000/year = €2,333/month):**
+
 | Basket | Monthly | % of Income | Status |
 |--------|---------|-------------|--------|
 | Official | €68.67 | 2.9% | Good |
@@ -293,6 +295,7 @@ This creates a **synthetic dataset that accurately reflects real market conditio
 **Analysis:** Below €35k income, healthy eating becomes difficult. Families must choose between complete nutrition and financial stability.
 
 **Median Paris (€42,000/year = €3,500/month):**
+
 | Basket | Monthly | % of Income | Status |
 |--------|---------|-------------|--------|
 | Official | €68.67 | 2.0% | Excellent |
@@ -312,7 +315,7 @@ This creates a **synthetic dataset that accurately reflects real market conditio
 **Cost Impact of Adding One Member (Real Complete Basket):**
 
 | Member Type | Monthly Cost | % Increase | New Total | SMIC % Impact |
-|-------------|--------------|-----------|-----------|--------------|
+|---|---|---|---|---|
 | Baby (0-2) | +€75.91 | +25% | €379.56 | 21.7% |
 | Child (3-6) | +€121.46 | +40% | €425.11 | 24.3% |
 | Child (7-12) | +€136.64 | +45% | €440.29 | 25.2% |
