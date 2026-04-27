@@ -1,4 +1,4 @@
-# Snippet Tool - Capstone Project Complete Documentation
+# Snipper Tool - Capstone Project Complete Documentation
 
 **Project**: Market Data Collection Automation System  
 **Status**: ✅ PRODUCTION READY  
