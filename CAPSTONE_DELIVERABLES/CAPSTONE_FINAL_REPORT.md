@@ -7,7 +7,7 @@
 **Instructor:** Professor Jobany Heredia Rico  
 **Date:** April 27, 2026  
 
-**GitHub Repository:** https://github.com/[user]/snipper-tool  
+**GitHub Repository:** https://github.com/horaciofonseca-dev/snipping-prices-tool  
 
 ---
 
@@ -180,7 +180,7 @@ All analysis code is available and reproducible:
 - `household_composition_impact.py` - Family composition multiplier analysis
 - `generate_household_visualizations.py` - Chart generation
 
-Data and code can be downloaded from: https://github.com/[user]/snipper-tool
+Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snipping-prices-tool
 
 ---
 
@@ -621,7 +621,7 @@ Sen, A. (1999). *Development as Freedom*. Oxford University Press.
 
 EasyOCR Documentation. (2025). *Optical Character Recognition for 80+ languages*. Retrieved from https://github.com/JaidedAI/EasyOCR
 
-GitHub. (2025). *Snipper Tool Repository*. Retrieved from https://github.com/[user]/snipper-tool
+GitHub. (2025). *Snipper Tool Repository*. Retrieved from https://github.com/horaciofonseca-dev/snipping-prices-tool
 
 Python Software Foundation. (2025). *Pandas Data Analysis Library*. Retrieved from https://pandas.pydata.org/
 
@@ -675,7 +675,7 @@ SNCF Connect. (2025). *Transport coûts et tarifs - Île-de-France*. https://www
 
 ## APPENDIX: DATA & CODE AVAILABILITY
 
-**GitHub Repository:** https://github.com/[user]/snipper-tool
+**GitHub Repository:** https://github.com/horaciofonseca-dev/snipping-prices-tool
 
 **Contents:**
 - `synthetic_12month_inflation_data.csv` - 2,163 price observations
