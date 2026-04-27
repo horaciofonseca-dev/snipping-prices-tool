@@ -546,10 +546,10 @@ Low birth rates in Paris correlate directly with food affordability becoming imp
 
 ### 9.3 Scalability Path
 
-**Phase 1 (Complete):** Proof of concept - Paris, 2,163 observations
-**Phase 2:** Expand to French cities - 50,000 observations, 200 stores
-**Phase 3:** European expansion - 500,000 observations, 5,000 stores
-**Phase 4:** Global markets - 5M+ observations, 50,000+ stores
+- **Phase 1 (Complete):** Proof of concept - Paris, 2,163 observations
+- **Phase 2:** Expand to French cities - 50,000 observations, 200 stores
+- **Phase 3:** European expansion - 500,000 observations, 5,000 stores
+- **Phase 4:** Global markets - 5M+ observations, 50,000+ stores
 
 ---
 
