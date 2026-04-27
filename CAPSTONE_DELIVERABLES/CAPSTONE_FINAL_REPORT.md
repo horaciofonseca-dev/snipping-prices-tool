@@ -615,11 +615,7 @@ SNCF Connect. (2025). *Transport coûts et tarifs - Île-de-France*. Retrieved f
 
 Deaton, A., & Muellbauer, J. (1980). *Economics and Consumer Behavior*. Cambridge University Press.
 
-Food and Agriculture Organization. (2022). *The State of Food Security and Nutrition in the World*. FAO Publications. https://www.fao.org/
-
 Kanbur, R., & Stiglitz, J. E. (2015). Dynastic inequality, mobility, and equality of opportunity. *Journal of Economic Inequality*, 13(4), 567-589.
-
-OECD. (2023). *Income Distribution Database (IDD)*. Retrieved from https://www.oecd.org/
 
 Piketty, T. (2014). *Capital in the Twenty-First Century*. Harvard University Press.
 
@@ -633,27 +629,20 @@ GitHub. (2025). *Snipper Tool Repository*. Retrieved from https://github.com/hor
 
 Python Software Foundation. (2025). *Pandas Data Analysis Library*. Retrieved from https://pandas.pydata.org/
 
-### News & Policy Analysis
+### Additional Data Sources
 
-Alvin, M. (2023). *The French housing crisis: Why Paris rents are out of control*. France 24. Retrieved from https://www.france24.com/
-
-Brunet, R. (2024). *Low birth rates in Europe: Economic factors driving demographic decline*. Eurostat Opinion. Retrieved from https://ec.europa.eu/eurostat
-
-Paris City Council. (2025). *Housing costs and affordability in Paris region*. Retrieved from https://www.paris.fr/
+Data and statistical indexes for demographic analysis, housing affordability, and economic indicators were obtained from:
+- France24.com (French news and analysis)
+- Paris municipal government sources (Paris.fr)
+- European Commission Eurostat databases (ec.europa.eu/eurostat)
 
 ---
 
 ### APA Format References (Arranged Alphabetically)
 
-Alvin, M. (2023). *The French housing crisis: Why Paris rents are out of control*. France 24. https://www.france24.com/
-
-Brunet, R. (2024). *Low birth rates in Europe: Economic factors driving demographic decline*. Eurostat Opinion. https://ec.europa.eu/eurostat
-
 Deaton, A., & Muellbauer, J. (1980). *Economics and consumer behavior*. Cambridge University Press.
 
 EasyOCR. (2025). *Optical character recognition for 80+ languages* [Software]. https://github.com/JaidedAI/EasyOCR
-
-Food and Agriculture Organization. (2022). *The state of food security and nutrition in the world*. FAO Publications. https://www.fao.org/
 
 Fonseca, H. (2026). *Real data, real impact: Snipper Tool and the hidden affordability crisis in Paris* (Unpublished capstone project). Miami Dade College.
 
@@ -666,10 +655,6 @@ Institut National de la Statistique et des Études Économiques. (2025). *Salair
 Kanbur, R., & Stiglitz, J. E. (2015). Dynastic inequality, mobility, and equality of opportunity. *Journal of Economic Inequality*, 13(4), 567-589.
 
 Ministère de l'Économie et des Finances. (2025). *Prix des produits alimentaires à la consommation*. https://www.economie.gouv.fr/statistiques
-
-Organization for Economic Cooperation and Development. (2023). *Income distribution database (IDD)*. https://www.oecd.org/
-
-Paris City Council. (2025). *Housing costs and affordability in Paris region*. https://www.paris.fr/
 
 Piketty, T. (2014). *Capital in the twenty-first century*. Harvard University Press.
 
