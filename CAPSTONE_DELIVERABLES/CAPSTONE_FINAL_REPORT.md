@@ -33,7 +33,7 @@
 
 ## 1. EXECUTIVE SUMMARY
 
-This capstone project investigates a fundamental gap between official food affordability statistics and real family spending in Paris. Using a novel OCR-powered data collection system called **Snipper Tool**, we collected 2,163 price observations across 55 product categories from April 2025 to April 2026.
+This capstone project investigates a fundamental gap between official food affordability statistics and real family spending in Paris. Using a novel OCR-powered data collection system called **Snipper Tool**, we collected baseline price observations in **April 2026** across 55 product categories in Paris supermarkets. To demonstrate the system's analytical capabilities, we expanded this data using **inflation-adjusted modeling** to simulate a 12-month historical timeline (April 2025 - April 2026), creating 2,163 synthetic data points that reflect realistic price variations and seasonal patterns.
 
 **Key Finding:** Official INSEE (Institut National de la Statistique et des Études Économiques) food baskets underestimate real family food costs by **342%** (€68.67 official vs €303.65 real monthly spending).
 
@@ -111,10 +111,11 @@ Official INSEE baskets are designed to measure the *minimum survival cost*, not 
 4. **Aggregates findings** - Data flows into centralized analysis pipeline
 5. **Produces insights** - Real market behavior becomes actionable intelligence
 
-**Data Collection Period:** April 2025 - April 2026 (12 months)  
-**Stores:** Auchan and Carrefour Paris locations  
+**Original Data Collection:** April 2026 (baseline pricing snapshot)  
+**Synthetic Timeline:** April 2025 - April 2026 (12 months, modeled using inflation adjustment)  
+**Stores:** Auchan and Carrefour Paris locations (April 2026 data)  
 **Products:** 55 categories (dairy, proteins, produce, pantry, hygiene, baby care)  
-**Observations:** 2,163 price records
+**Total Observations:** 2,163 data points (synthetic, inflation-adjusted)
 
 ### 3.3 Basket Definitions
 
@@ -186,13 +187,15 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 
 ## 5. DATA COLLECTION & ANALYSIS
 
-### 5.1 Data Quality
+### 5.1 Data Sources & Quality
 
-**Collection Period:** April 2025 - April 2026  
-**Total Records:** 2,163 price observations  
+**Baseline Collection:** April 2026 (actual price observations)  
+**Demonstration Timeline:** April 2025 - April 2026 (synthetic, inflation-modeled)  
+**Total Records:** 2,163 data points  
 **Product Categories:** 55  
-**Stores:** 2 (Auchan, Carrefour)  
-**Validation:** >99% accuracy after human review  
+**Stores:** Auchan and Carrefour Paris locations  
+**Validation:** Baseline prices verified with >99% accuracy after human review  
+**Synthetic Data:** Generated using INSEE inflation rates and seasonal multipliers  
 
 **Price Variation Factors Analyzed:**
 - Monthly inflation rates (INSEE baseline 2.2-3.2%)
@@ -200,15 +203,20 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 - Store-specific pricing strategies (Auchan: -5%, Carrefour: +2%)
 - Product quality tiers (standard, premium, organic)
 
-### 5.2 Inflation Modeling
+### 5.2 Inflation-Adjusted Synthetic Data Modeling
 
-Real data was modeled with:
-- INSEE monthly inflation rates (source: insee.fr/inflation)
-- Category-specific inflation variation
-- Seasonal price cycles (coffee higher in winter, candy higher at Christmas)
-- Store-specific pricing strategies
+**Methodology:** To demonstrate Snipper Tool's analytical capabilities across a temporal dimension, we created a 12-month synthetic dataset (April 2025 - April 2026) by applying inflation-rate correction factors to our April 2026 baseline prices:
 
-This creates a **synthetic dataset that accurately reflects real market conditions** while protecting individual store and consumer privacy.
+- **Base Data:** Actual April 2026 prices from Auchan and Carrefour Paris
+- **Inflation Corrector:** INSEE monthly inflation rates (2.2-3.2% range, source: insee.fr)
+- **Backward Projection:** Applied inverse inflation factors to model historical prices (April 2025 baseline)
+- **Category-Specific Variation:** Different inflation rates by product category (food, energy, services)
+- **Seasonal Adjustment:** Added seasonal multipliers to reflect real price cycles (e.g., coffee +15% in winter months, promotional items -10% at holidays)
+- **Store-Specific Strategies:** Incorporated known pricing patterns (Auchan -5% discount strategy, Carrefour +2% premium positioning)
+
+**Result:** A synthetic dataset that authentically models how prices would have evolved over 12 months, allowing demonstration of the system's ability to track affordability trends, identify seasonal patterns, and quantify the real impact of inflation on family budgets.
+
+**Data Classification:** This dataset is **synthetic and created for demonstration purposes** to showcase Snipper Tool's analytical power. The April 2026 baseline data is factual; the 12-month expansion uses realistic inflation-based modeling rather than actual historical prices.
 
 ---
 
@@ -677,15 +685,28 @@ SNCF Connect. (2025). *Transport coûts et tarifs - Île-de-France*. https://www
 
 **GitHub Repository:** https://github.com/horaciofonseca-dev/snipping-prices-tool
 
+**Dataset Information:**
+- **Primary Data:** Actual April 2026 price observations from Auchan and Carrefour Paris
+- **Demonstration Dataset:** `synthetic_12month_inflation_data.csv` - 2,163 inflation-adjusted data points (April 2025 - April 2026)
+- **Methodology:** Synthetic timeline created using INSEE inflation rates as correction factors to model historical price variations
+- **Classification:** Demonstration/synthetic data created to showcase analytical capabilities
+
 **Contents:**
-- `synthetic_12month_inflation_data.csv` - 2,163 price observations
+- `synthetic_12month_inflation_data.csv` - 2,163 inflation-modeled price observations
 - `household_composition_impact.py` - Family multiplier analysis
 - `generate_basket_analysis_corrected.py` - Basket cost calculations
+- `generate_synthetic_inflation_data.py` - Inflation-rate based data generation methodology
 - `generate_household_visualizations.py` - Visualization generation
 - `BASKET_ANALYSIS_CORRECTED.txt` - Full statistical analysis
 - `README.md` - Complete methodology documentation
 
-**Reproducibility:** All analysis is fully reproducible using public Python libraries (pandas, matplotlib, numpy). No proprietary tools or licensed software required.
+**Data Transparency:**
+- Original baseline prices (April 2026) are actual market observations
+- 12-month synthetic expansion uses documented inflation rates and seasonal patterns
+- All modeling parameters are reproducible and documented in source code
+- Analysis methodology is transparent and verifiable
+
+**Reproducibility:** All analysis is fully reproducible using public Python libraries (pandas, matplotlib, numpy). No proprietary tools or licensed software required. The inflation-adjustment methodology can be applied to other geographic markets or time periods.
 
 ---
 
@@ -698,3 +719,8 @@ SNCF Connect. (2025). *Transport coûts et tarifs - Île-de-France*. https://www
 ---
 
 *This capstone project demonstrates that real data collection, rigorous analysis, and evidence-based storytelling can make invisible problems visible, and visible problems addressable.*
+
+---
+
+**Data Methodology Note:**
+This report analyzes a 12-month synthetic dataset (April 2025 - April 2026) created for demonstration purposes using actual April 2026 baseline prices from Paris supermarkets. The 12-month expansion was generated using INSEE inflation rates as correction factors to model realistic historical price variations and seasonal patterns. The analytical methodology is fully reproducible and can be applied to any geographic market or time period using inflation-adjusted data modeling.
