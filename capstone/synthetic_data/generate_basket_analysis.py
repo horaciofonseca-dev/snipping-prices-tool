@@ -272,21 +272,26 @@ def create_affordability_cliff_chart(stats):
             ax.text(bar.get_x() + bar.get_width()/2., height + 1,
                    f'{pct:.1f}%', ha='center', va='bottom', fontweight='bold', fontsize=9)
 
-    # Add affordability threshold line
-    ax.axhline(y=30, color='red', linestyle='--', linewidth=2.5, label='Affordability Cliff (30%)', alpha=0.7)
-    ax.axhline(y=50, color='darkred', linestyle='--', linewidth=2.5, label='Crisis Threshold (50%)', alpha=0.7)
+    # Add affordability threshold lines (corrected thresholds)
+    ax.axhline(y=10, color='green', linestyle='--', linewidth=2, label='Excellent (10%)', alpha=0.7)
+    ax.axhline(y=15, color='lightgreen', linestyle='--', linewidth=2, label='Good (15%)', alpha=0.7)
+    ax.axhline(y=20, color='orange', linestyle='--', linewidth=2.5, label='Tight (20%)', alpha=0.7)
+    ax.axhline(y=30, color='red', linestyle='--', linewidth=2.5, label='Crisis (30%)', alpha=0.7)
+    ax.axhline(y=50, color='darkred', linestyle='--', linewidth=2.5, label='Catastrophic (50%)', alpha=0.7)
 
     ax.set_ylabel('% of Annual Income Spent on Food', fontsize=13, fontweight='bold')
-    ax.set_title('Food Affordability by Paris Household Income Level', fontsize=14, fontweight='bold')
+    ax.set_title('Food Affordability by Paris Household Income Level\n(Real Complete Basket Only)', fontsize=14, fontweight='bold')
     ax.set_xticks(x + width)
     ax.set_xticklabels(income_names, fontsize=11)
-    ax.legend(loc='upper right', fontsize=10)
-    ax.set_ylim(0, 100)
+    ax.legend(loc='upper right', fontsize=9)
+    ax.set_ylim(0, 50)
 
-    # Shade affordability zones
-    ax.axhspan(0, 30, alpha=0.1, color='green', label='Affordable')
-    ax.axhspan(30, 50, alpha=0.1, color='yellow')
-    ax.axhspan(50, 100, alpha=0.1, color='red')
+    # Shade affordability zones (corrected)
+    ax.axhspan(0, 10, alpha=0.15, color='green')     # Excellent
+    ax.axhspan(10, 15, alpha=0.12, color='lightgreen')  # Good
+    ax.axhspan(15, 20, alpha=0.12, color='yellow')   # Manageable but tight
+    ax.axhspan(20, 30, alpha=0.15, color='orange')   # Difficult
+    ax.axhspan(30, 50, alpha=0.15, color='red')      # Crisis
 
     plt.tight_layout()
     plt.savefig(os.path.join(OUTPUT_DIR, '02_affordability_cliffs.png'), dpi=150, bbox_inches='tight')
@@ -432,11 +437,15 @@ def create_healthy_cliff_chart(stats):
     bars3 = ax.bar(x + width, healthy_remaining, width, label='After Healthy Basket',
                   color='#f44336', edgecolor='black', linewidth=1.5)
 
-    # Add affordability threshold
+    # Add minimum expense thresholds for Paris household
+    # Essential annual expenses (rent, utilities, transport, childcare, healthcare, etc.)
     ax.axhline(y=0, color='black', linestyle='-', linewidth=1)
-    ax.axhline(y=8000, color='green', linestyle='--', linewidth=2, alpha=0.6, label='Comfortable Level (€8k remaining)')
-    ax.axhline(y=4000, color='orange', linestyle='--', linewidth=2, alpha=0.6, label='Tight Level (€4k remaining)')
-    ax.axhline(y=0, color='red', linestyle='--', linewidth=2.5, alpha=0.8, label='Crisis Point')
+    ax.axhline(y=14400, color='green', linestyle='--', linewidth=2, alpha=0.6,
+              label='Min. Essential (€1.2k/month: rent, utilities, transport, childcare)')
+    ax.axhline(y=9600, color='orange', linestyle='--', linewidth=2.5, alpha=0.6,
+              label='Extreme Tight (€800/month - only basic survival)')
+    ax.axhline(y=0, color='red', linestyle='--', linewidth=2.5, alpha=0.8,
+              label='IMPOSSIBLE: Zero left for housing/utilities')
 
     # Annotations
     for bars in [bars1, bars2, bars3]:
