@@ -1,10 +1,20 @@
 import pandas as pd
 from datetime import datetime
 
-# Base household (2 adults + 1 child age 7-10)
+# Base household (2 adults + 1 child age 7-12)
+# NOTE: These are total household costs. Per-capita derived by dividing by adult-equivalents.
 BASE_OFFICIAL = 68.67
 BASE_REAL = 303.65
 BASE_HEALTHY = 383.58
+
+# Base household composition for adult-equivalent calculation
+# 2 adults + 1 child (7-12) at 0.45x adult = 2.45 adult-equivalents
+BASE_ADULT_EQUIVALENTS = 2.45
+
+# Derived per-capita costs (per adult-equivalent)
+PERCAPITA_OFFICIAL = BASE_OFFICIAL / BASE_ADULT_EQUIVALENTS  # €28.04/month
+PERCAPITA_REAL = BASE_REAL / BASE_ADULT_EQUIVALENTS          # €123.94/month
+PERCAPITA_HEALTHY = BASE_HEALTHY / BASE_ADULT_EQUIVALENTS    # €156.57/month
 
 # Paris income levels
 PARIS_INCOMES = {
@@ -14,8 +24,8 @@ PARIS_INCOMES = {
     'Upper Middle': 65000,
 }
 
-# Consumption multipliers by member type
-# Based on standard nutrition/consumption patterns
+# Consumption multipliers by member type (as % of adult)
+# These are applied to PER-CAPITA costs, not household costs
 MEMBER_MULTIPLIERS = {
     'Baby (0-2)': {
         'description': 'Infant requiring formula, diapers, specialized creams',
@@ -38,7 +48,7 @@ MEMBER_MULTIPLIERS = {
     'Teenager (13-18)': {
         'description': 'Teen with adult-size appetite',
         'official': 0.80,
-        'real': 0.95,
+        'real': 0.95,      # Slightly less than full adult
         'healthy': 0.90,
     },
     'Adult': {
@@ -56,12 +66,21 @@ MEMBER_MULTIPLIERS = {
 }
 
 def calculate_household_cost(base_cost, members_list):
-    """Calculate total household cost based on member composition"""
+    """Calculate total household cost based on member composition using per-capita methodology"""
     total = base_cost
+    # Determine which per-capita cost to use based on base cost
+    if base_cost == BASE_OFFICIAL:
+        percapita = PERCAPITA_OFFICIAL
+    elif base_cost == BASE_REAL:
+        percapita = PERCAPITA_REAL
+    else:
+        percapita = PERCAPITA_HEALTHY
+
+    # Add cost for each additional member (per-capita × multiplier)
     for member_type in members_list:
         multiplier = MEMBER_MULTIPLIERS[member_type]['official' if base_cost == BASE_OFFICIAL else
                                                       'real' if base_cost == BASE_REAL else 'healthy']
-        total += base_cost * multiplier
+        total += percapita * multiplier
     return total
 
 def analyze_composition(member_name, member_type):
@@ -74,10 +93,11 @@ def analyze_composition(member_name, member_type):
 
     mult = MEMBER_MULTIPLIERS[member_type]
 
-    # Calculate new costs
-    new_official = BASE_OFFICIAL * (1 + mult['official'])
-    new_real = BASE_REAL * (1 + mult['real'])
-    new_healthy = BASE_HEALTHY * (1 + mult['healthy'])
+    # Calculate new costs using per-capita methodology
+    # New cost = Base cost + (per-capita cost × member multiplier)
+    new_official = BASE_OFFICIAL + (PERCAPITA_OFFICIAL * mult['official'])
+    new_real = BASE_REAL + (PERCAPITA_REAL * mult['real'])
+    new_healthy = BASE_HEALTHY + (PERCAPITA_HEALTHY * mult['healthy'])
 
     # Calculate increase
     inc_official = new_official - BASE_OFFICIAL

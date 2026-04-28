@@ -326,30 +326,32 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 
 | Income Level | Base | +Baby | +Teenager | Annual Loss |
 |---|---|---|---|---|
-| **SMIC (€21k)** | €17,356 | €16,445 | €13,895 | **-€3,461** |
-| **Median (€42k)** | €41,176 | €37,445 | €34,895 | **-€6,281** |
+| **SMIC (€21k)** | €17,356 | €16,984 | €15,943 | **-€1,413** |
+| **Median (€42k)** | €38,356 | €37,984 | €36,943 | **-€1,413** |
 
-**Critical Finding:** While the monthly food cost increase is identical (€288.47 for a teenager = €3,461/year), the IMPACT differs dramatically:
-- **SMIC family:** Loss of €3,461/year (€288.47/month × 12) represents 24% of remaining budget
+**Critical Finding:** Using per-capita methodology, teenager costs €117.74/month (€1,413/year), not the oversimplified €288.47/month (€3,461/year):
+- **SMIC family:** Loss of €1,413/year (€117.74/month × 12) represents 8% of remaining budget after base costs
 - **After housing (€600-850/month), utilities, transport, childcare:** SMIC family has only €150-300/month remaining
-- **Adding a teenager:** Remaining margin shrinks further to near-zero after housing and essential expenses—below realistic emergency buffer
-- **Median family:** Same teenager costs €288.47/month, but represents only 7% of their remaining margin—manageable
+- **Adding a teenager:** Remaining margin shrinks by €117.74/month—manageable percentage-wise, but critical in absolute terms
+- **Median family:** Same teenager costs €117.74/month, but represents only 3% of their remaining margin—easily absorbed
 
-**Cost Impact of Adding Each Family Member to Base (Real Complete Basket):**
+**Cost Impact of Adding Each Family Member to Base (Real Complete Basket - Per-Capita Methodology):**
 
-| Member Type | Monthly Cost | Annual Cost Increase | % Increase | Multiplier Factor |
+Per-capita cost calculation: Base household (2 adults + 1 child) = €303.65/month ÷ 2.45 adult-equivalents = **€123.94/month per adult-equivalent**
+
+| Member Type | Multiplier | Monthly Cost | Annual Cost Increase | % of Per-Capita |
 |---|---|---|---|---|
-| Baby (0-2) | +€75.91 | **+€911/year** | +25% | 1.0x (baseline) |
-| Child (3-6) | +€121.46 | **+€1,457/year** | +40% | 1.6x baby |
-| Child (7-12) | +€136.64 | **+€1,640/year** | +45% | 1.8x baby |
-| Teenager (13-18) | +€288.47 | **+€3,461/year** | +95% | **3.8x baby** |
-| Senior (65+) | +€334.01 | **+€4,008/year** | +110% | **4.4x baby** |
+| Baby (0-2) | 0.25 | +€30.98 | **+€372/year** | 25% of per-capita |
+| Child (3-6) | 0.40 | +€49.58 | **+€595/year** | 40% of per-capita |
+| Child (7-12) | 0.45 | +€55.77 | **+€669/year** | 45% of per-capita |
+| Teenager (13-18) | 0.95 | +€117.74 | **+€1,413/year** | 95% of per-capita |
+| Senior (65+) | 1.10 | +€136.33 | **+€1,636/year** | 110% of per-capita |
 
-**Policy Consequence:** Official statistics count all household members as equivalent units. This ignores that:
-- Teenagers cost 4x more to feed than babies
-- Seniors cost 4.4x more to feed than babies
+**Policy Consequence:** Using per-capita decomposition (not household multiplication):
+- Teenagers cost €117.74/month, not 4x household cost
+- Seniors cost €136.33/month, legitimately higher due to dietary needs
 - Yet families don't choose these compositions—they happen naturally (growth, aging parents)
-- Each addition multiplicatively erodes already-thin affordability margins for low-income families
+- Each addition reduces remaining budget, but by realistic amounts tied to actual consumption, not household averages
 
 **Professional Note:** The Family Squeeze visualization (06_family_squeeze.png) reveals a critical blind spot in affordability policy. By showing remaining budget, it exposes why "percentage of income" alone is insufficient—the absolute margin matters when families face fixed housing costs.
 
@@ -385,14 +387,17 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 - Low housing cost (€600) → slightly more breathing room
 - But neither scenario provides genuine affordability
 
-**Sandwich Generation Crisis (Updated with Housing Context):**
-A 45-year-old supporting both aging parent (€334) and adult child (€304) faces:
-- Food costs: €942/month
+**Sandwich Generation Crisis (Updated with Per-Capita Methodology):**
+A 45-year-old supporting both aging parent (€136.33) and adult child (€123.94) faces:
+- Base household: €303.65/month
+- Add parent (1.10× multiplier): €136.33/month
+- Add adult child (1.0× multiplier): €123.94/month
+- Total food costs: €563.92/month
 - Housing: €700-850/month
 - Utilities, transport, childcare: €400/month
-- **Total minimum: €2,042-2,192/month**
-- On median income (€3,500/month): **41-48% consumed**
-- On SMIC (€1,750/month): **IMPOSSIBLE—exceeds income**
+- **Total minimum: €1,663-1,813/month**
+- On median income (€3,500/month): **48-52% consumed** (still manageable)
+- On SMIC (€1,750/month): **95-104%** (impossible—exceeds income by €113-213/month even before clothing, healthcare, insurance)
 
 ---
 

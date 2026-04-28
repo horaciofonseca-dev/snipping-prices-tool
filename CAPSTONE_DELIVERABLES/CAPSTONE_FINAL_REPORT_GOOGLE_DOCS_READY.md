@@ -1,4 +1,4 @@
-﻿# REAL DATA, REAL IMPACT: SNIPPER TOOL AND THE HIDDEN AFFORDABILITY CRISIS IN PARIS
+# REAL DATA, REAL IMPACT: SNIPPER TOOL AND THE HIDDEN AFFORDABILITY CRISIS IN PARIS
 
 **Author:** Horacio Fonseca  
 **Title:** Data Analyst, Undergraduate Student  
@@ -35,13 +35,13 @@
 
 This capstone project investigates a fundamental gap between official food affordability statistics and real family spending in Paris. Using a novel OCR-powered data collection system called **Snipper Tool**, we collected baseline price observations in **April 2026** across 55 product categories in Paris supermarkets. To demonstrate the system's analytical capabilities, we expanded this data using **inflation-adjusted modeling** to simulate a 12-month historical timeline (April 2025 - April 2026), creating 2,163 synthetic data points that reflect realistic price variations and seasonal patterns.
 
-**Key Finding:** Official INSEE (Institut National de la Statistique et des Ã‰tudes Ã‰conomiques) food baskets underestimate real family food costs by **342%** (â‚¬68.67 official vs â‚¬303.65 real monthly spending).
+**Key Finding:** Official INSEE (Institut National de la Statistique et des Études Économiques) food baskets underestimate real family food costs by **342%** (€68.67 official vs €303.65 real monthly spending).
 
 This gap has profound sociological consequences:
 - SMIC (minimum wage) workers face impossible affordability cliffs
 - Household composition directly determines poverty severity
 - Entire populations (seniors, teenagers, families with special needs) are statistically invisible
-- Food affordability is suppressing birth ratesâ€”families rationally avoid children they cannot afford
+- Food affordability is suppressing birth rates—families rationally avoid children they cannot afford
 
 **Innovation:** Snipper Tool demonstrates a scalable methodology for collecting real-time market pricing data at the point of consumption, enabling evidence-based policy decisions.
 
@@ -124,17 +124,17 @@ Three distinct baskets were analyzed:
 **Official Basket (INSEE Minimal):** 13 products representing government minimum consumption
 - Purpose: Measure inflation baseline
 - Reality: Survival-level diet
-- Monthly cost: â‚¬68.67
+- Monthly cost: €68.67
 
 **Real Complete Basket:** 34 products reflecting actual family purchases
 - Purpose: Measure real family spending
 - Reality: Dignified living with dietary variety and family essentials
-- Monthly cost: â‚¬303.65
+- Monthly cost: €303.65
 
 **Healthy Complete Basket:** 41 products emphasizing nutrition and quality
 - Purpose: Measure health-focused eating
 - Reality: Food choices that support wellness
-- Monthly cost: â‚¬383.58
+- Monthly cost: €383.58
 
 ---
 
@@ -224,7 +224,7 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 
 ### 6.1 The Three Baskets Framework
 
-#### Finding 1: Official Basket (â‚¬68.67/month)
+#### Finding 1: Official Basket (€68.67/month)
 
 **Composition:** 13 emblematic products  
 - Milk (12L/month), Bread (8 loaves), Eggs (36), Pasta (3kg), Rice (2kg), Beans (1kg), Cheese, Butter, Oil, Salt, Sugar, Wine, Coffee
@@ -236,122 +236,124 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 - No dietary accommodations (no lactose-free, gluten-free options)
 - No family essentials (no diapers, hygiene products)
 
-**Monthly Cost:** â‚¬68.67  
-**Annual Cost:** â‚¬824.03  
+**Monthly Cost:** €68.67  
+**Annual Cost:** €824.03  
 **As % of SMIC income:** 3.9%  
 
-#### Finding 2: Real Complete Basket (â‚¬303.65/month)
+#### Finding 2: Real Complete Basket (€303.65/month)
 
 **Composition:** 34 products reflecting actual family purchases
 
 **What's Added:**
-- Complementary proteins: chicken (â‚¬6.99/kg), fish (â‚¬7.49/kg), ground beef (â‚¬8.99/kg)
-- Dietary alternatives: lactose-free milk (â‚¬1.75/L), gluten-free bread (â‚¬3.49/loaf)
-- Fresh vegetables: carrots (â‚¬2.18/kg), spinach (â‚¬3.00/kg), potatoes (â‚¬3.00/kg)
-- Baby essentials: diapers (â‚¬18.99/5-pack), baby creams (â‚¬8.99)
-- Hygiene products: toilet paper (â‚¬4.99/pack), soap (â‚¬6.99), shampoo (â‚¬5.99)
-- Cooking essentials: olive oil premium (â‚¬8.99/L), spices, sauces
+- Complementary proteins: chicken (€6.99/kg), fish (€7.49/kg), ground beef (€8.99/kg)
+- Dietary alternatives: lactose-free milk (€1.75/L), gluten-free bread (€3.49/loaf)
+- Fresh vegetables: carrots (€2.18/kg), spinach (€3.00/kg), potatoes (€3.00/kg)
+- Baby essentials: diapers (€18.99/5-pack), baby creams (€8.99)
+- Hygiene products: toilet paper (€4.99/pack), soap (€6.99), shampoo (€5.99)
+- Cooking essentials: olive oil premium (€8.99/L), spices, sauces
 
-**Reality:** This represents what real families actually buyâ€”not luxury, but normal living.
+**Reality:** This represents what real families actually buy—not luxury, but normal living.
 
-**Monthly Cost:** â‚¬303.65  
-**Annual Cost:** â‚¬3,643.74  
-**Gap vs Official:** +â‚¬234.98/month (+342%)  
+**Monthly Cost:** €303.65  
+**Annual Cost:** €3,643.74  
+**Gap vs Official:** +€234.98/month (+342%)  
 **As % of SMIC income:** 17.4%  
 
-#### Finding 3: Healthy Complete Basket (â‚¬383.58/month)
+#### Finding 3: Healthy Complete Basket (€383.58/month)
 
 **Composition:** 41 products with health emphasis
 
 **What's Added to Real Basket:**
-- Organic produce (â‚¬12.49/kg vs â‚¬3.00/kg standard)
+- Organic produce (€12.49/kg vs €3.00/kg standard)
 - Quality proteins (wild-caught fish vs farmed)
-- Whole grain products (â‚¬2.99/loaf vs â‚¬1.99)
+- Whole grain products (€2.99/loaf vs €1.99)
 - Nutritional supplements (omega-3s, vitamins)
 - Low-sodium, sugar-free alternatives
 
 **Reality:** Choosing health costs significantly more. This represents middle-class eating.
 
-**Monthly Cost:** â‚¬383.58  
-**Annual Cost:** â‚¬4,603.02  
-**Health premium vs Real:** +â‚¬79.94/month (+26.3%)  
-**Health premium vs Official:** +â‚¬314.92/month (+458.6%)  
+**Monthly Cost:** €383.58  
+**Annual Cost:** €4,603.02  
+**Health premium vs Real:** +€79.94/month (+26.3%)  
+**Health premium vs Official:** +€314.92/month (+458.6%)  
 **As % of SMIC income:** 21.9%  
 
 ### 6.2 Affordability Crisis by Income Level
 
 [INSERT VISUALIZATION: 02_affordability_cliffs.png - COLOR-CODED BY AFFORDABILITY STATUS]
 
-**SMIC Worker (â‚¬21,000/year = â‚¬1,750/month):**
+**SMIC Worker (€21,000/year = €1,750/month):**
 
 | Basket | Monthly | % of Income | Status |
 |--------|---------|-------------|--------|
-| Official | â‚¬68.67 | 3.9% | Excellent |
-| Real | â‚¬303.65 | 17.4% | Manageable (but tight) |
-| Healthy | â‚¬383.58 | 21.9% | Difficult |
+| Official | €68.67 | 3.9% | Excellent |
+| Real | €303.65 | 17.4% | Manageable (but tight) |
+| Healthy | €383.58 | 21.9% | Difficult |
 
-**Analysis:** A SMIC worker on the real complete basket spends â‚¬303.65 on food. With rent (â‚¬600-800), utilities (â‚¬150), transport (â‚¬100), and childcare (â‚¬200+), there is barely â‚¬150-200 remaining for everything else.
+**Analysis:** A SMIC worker on the real complete basket spends €303.65 on food. With rent (€600-800), utilities (€150), transport (€100), and childcare (€200+), there is barely €150-200 remaining for everything else.
 
-**Low Income (â‚¬28,000/year = â‚¬2,333/month):**
-
-| Basket | Monthly | % of Income | Status |
-|--------|---------|-------------|--------|
-| Official | â‚¬68.67 | 2.9% | Good |
-| Real | â‚¬303.65 | 13.0% | Manageable |
-| Healthy | â‚¬383.58 | 16.4% | Manageable |
-
-**Analysis:** Below â‚¬35k income, healthy eating becomes difficult. Families must choose between complete nutrition and financial stability.
-
-**Median Paris (â‚¬42,000/year = â‚¬3,500/month):**
+**Low Income (€28,000/year = €2,333/month):**
 
 | Basket | Monthly | % of Income | Status |
 |--------|---------|-------------|--------|
-| Official | â‚¬68.67 | 2.0% | Excellent |
-| Real | â‚¬303.65 | 8.7% | Excellent |
-| Healthy | â‚¬383.58 | 11.0% | Good |
+| Official | €68.67 | 2.9% | Good |
+| Real | €303.65 | 13.0% | Manageable |
+| Healthy | €383.58 | 16.4% | Manageable |
+
+**Analysis:** Below €35k income, healthy eating becomes difficult. Families must choose between complete nutrition and financial stability.
+
+**Median Paris (€42,000/year = €3,500/month):**
+
+| Basket | Monthly | % of Income | Status |
+|--------|---------|-------------|--------|
+| Official | €68.67 | 2.0% | Excellent |
+| Real | €303.65 | 8.7% | Excellent |
+| Healthy | €383.58 | 11.0% | Good |
 
 **Analysis:** At median income, food affordability is not a crisis. These families can eat well without financial stress.
 
-**Key Insight:** The affordability cliff is not gradual. It's a vertical drop. Between â‚¬28k-35k income, families transition from "manageable" to "impossible."
+**Key Insight:** The affordability cliff is not gradual. It's a vertical drop. Between €28k-35k income, families transition from "manageable" to "impossible."
 
 ### 6.3 Household Composition Multiplier Effect: The Family Squeeze
 
 **Visualization: 06_family_squeeze.png - How Each Family Member Reduces Remaining Budget**
 
-[Family Squeeze Chart - See 06_family_squeeze.png attachment]
+![Family Squeeze Chart](06_family_squeeze.png)
 
 **Base Household:** 2 adults + 1 child (age 7-10)
 
-**The Squeeze Effect (Real Complete Basket at â‚¬303.65/month) - Annual Remaining Budgets:**
+**The Squeeze Effect (Real Complete Basket at €303.65/month) - Annual Remaining Budgets:**
 
 | Income Level | Base | +Baby | +Teenager | Annual Loss |
 |---|---|---|---|---|
-| **SMIC (â‚¬21k)** | â‚¬17,356 | â‚¬16,445 | â‚¬13,895 | **-â‚¬3,461** |
-| **Median (â‚¬42k)** | â‚¬41,176 | â‚¬37,445 | â‚¬34,895 | **-â‚¬6,281** |
+| **SMIC (€21k)** | €17,356 | €16,984 | €15,943 | **-€1,413** |
+| **Median (€42k)** | €38,356 | €37,984 | €36,943 | **-€1,413** |
 
-**Critical Finding:** While the monthly food cost increase is identical (â‚¬288.47 for a teenager = â‚¬3,461/year), the IMPACT differs dramatically:
-- **SMIC family:** Loss of â‚¬3,461/year (â‚¬288.47/month Ã— 12) represents 24% of remaining budget
-- **After housing (â‚¬600-850/month), utilities, transport, childcare:** SMIC family has only â‚¬150-300/month remaining
-- **Adding a teenager:** Remaining margin shrinks further to near-zero after housing and essential expensesâ€”below realistic emergency buffer
-- **Median family:** Same teenager costs â‚¬288.47/month, but represents only 7% of their remaining marginâ€”manageable
+**Critical Finding:** Using per-capita methodology, teenager costs €117.74/month (€1,413/year), not the oversimplified €288.47/month (€3,461/year):
+- **SMIC family:** Loss of €1,413/year (€117.74/month × 12) represents 8% of remaining budget after base costs
+- **After housing (€600-850/month), utilities, transport, childcare:** SMIC family has only €150-300/month remaining
+- **Adding a teenager:** Remaining margin shrinks by €117.74/month—manageable percentage-wise, but critical in absolute terms
+- **Median family:** Same teenager costs €117.74/month, but represents only 3% of their remaining margin—easily absorbed
 
-**Cost Impact of Adding Each Family Member to Base (Real Complete Basket):**
+**Cost Impact of Adding Each Family Member to Base (Real Complete Basket - Per-Capita Methodology):**
 
-| Member Type | Monthly Cost | Annual Cost Increase | % Increase | Multiplier Factor |
+Per-capita cost calculation: Base household (2 adults + 1 child) = €303.65/month ÷ 2.45 adult-equivalents = **€123.94/month per adult-equivalent**
+
+| Member Type | Multiplier | Monthly Cost | Annual Cost Increase | % of Per-Capita |
 |---|---|---|---|---|
-| Baby (0-2) | +â‚¬75.91 | **+â‚¬911/year** | +25% | 1.0x (baseline) |
-| Child (3-6) | +â‚¬121.46 | **+â‚¬1,457/year** | +40% | 1.6x baby |
-| Child (7-12) | +â‚¬136.64 | **+â‚¬1,640/year** | +45% | 1.8x baby |
-| Teenager (13-18) | +â‚¬288.47 | **+â‚¬3,461/year** | +95% | **3.8x baby** |
-| Senior (65+) | +â‚¬334.01 | **+â‚¬4,008/year** | +110% | **4.4x baby** |
+| Baby (0-2) | 0.25 | +€30.98 | **+€372/year** | 25% of per-capita |
+| Child (3-6) | 0.40 | +€49.58 | **+€595/year** | 40% of per-capita |
+| Child (7-12) | 0.45 | +€55.77 | **+€669/year** | 45% of per-capita |
+| Teenager (13-18) | 0.95 | +€117.74 | **+€1,413/year** | 95% of per-capita |
+| Senior (65+) | 1.10 | +€136.33 | **+€1,636/year** | 110% of per-capita |
 
-**Policy Consequence:** Official statistics count all household members as equivalent units. This ignores that:
-- Teenagers cost 4x more to feed than babies
-- Seniors cost 4.4x more to feed than babies
-- Yet families don't choose these compositionsâ€”they happen naturally (growth, aging parents)
-- Each addition multiplicatively erodes already-thin affordability margins for low-income families
+**Policy Consequence:** Using per-capita decomposition (not household multiplication):
+- Teenagers cost €117.74/month, not 4x household cost
+- Seniors cost €136.33/month, legitimately higher due to dietary needs
+- Yet families don't choose these compositions—they happen naturally (growth, aging parents)
+- Each addition reduces remaining budget, but by realistic amounts tied to actual consumption, not household averages
 
-**Professional Note:** The Family Squeeze visualization (06_family_squeeze.png) reveals a critical blind spot in affordability policy. By showing remaining budget, it exposes why "percentage of income" alone is insufficientâ€”the absolute margin matters when families face fixed housing costs.
+**Professional Note:** The Family Squeeze visualization (06_family_squeeze.png) reveals a critical blind spot in affordability policy. By showing remaining budget, it exposes why "percentage of income" alone is insufficient—the absolute margin matters when families face fixed housing costs.
 
 ---
 
@@ -359,40 +361,43 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 
 **Visualization: 07_housing_burden.png - Housing Cost Range by Income Level**
 
-[Housing Burden Chart - See 07_housing_burden.png attachment]
+![Housing Burden Chart](07_housing_burden.png)
 
 **The Housing Cost Reality (2-3 Bedroom Apartment, Paris Region):**
 
 | Income Level | Typical Monthly Rent | Annual Housing Cost | % of Annual Income |
 |---|---|---|---|
-| **SMIC (â‚¬21k)** | â‚¬600-850 | â‚¬7,200-10,200 | **34-49% of income** |
-| **Median (â‚¬42k)** | â‚¬1,000-1,300 | â‚¬12,000-15,600 | **29-37% of income** |
+| **SMIC (€21k)** | €600-850 | €7,200-10,200 | **34-49% of income** |
+| **Median (€42k)** | €1,000-1,300 | €12,000-15,600 | **29-37% of income** |
 
 **Critical Context:** When analyzing food affordability for low-income families, housing costs cannot be ignored:
 
-1. **Housing first claim:** SMIC workers pay â‚¬600-850 for basic apartment
-2. **Food comes next:** Real basket at â‚¬304/month = â‚¬3,648/year
-3. **Essential services:** Utilities (â‚¬150), transport (â‚¬100), childcare (â‚¬200+)
-4. **Combined minimum:** â‚¬1,200-1,400/month required before healthcare, phone, emergency savings
+1. **Housing first claim:** SMIC workers pay €600-850 for basic apartment
+2. **Food comes next:** Real basket at €304/month = €3,648/year
+3. **Essential services:** Utilities (€150), transport (€100), childcare (€200+)
+4. **Combined minimum:** €1,200-1,400/month required before healthcare, phone, emergency savings
 
 **Remaining Budget Reality for SMIC Family:**
-- Total monthly income: â‚¬1,750
-- Fixed costs (housing + utilities + transport + childcare): â‚¬1,050-1,200
-- After real food costs (â‚¬304): **â‚¬150-300/month remaining**
+- Total monthly income: €1,750
+- Fixed costs (housing + utilities + transport + childcare): €1,050-1,200
+- After real food costs (€304): **€150-300/month remaining**
 
-**Professional Interpretation:** The housing burden variation (whisker chart 07) explains why a single "remaining budget" number (like â‚¬14.4k) is insufficient. SMIC families have NO FLEXIBILITY:
-- High housing cost (â‚¬850) â†’ tight food budget
-- Low housing cost (â‚¬600) â†’ slightly more breathing room
+**Professional Interpretation:** The housing burden variation (whisker chart 07) explains why a single "remaining budget" number (like €14.4k) is insufficient. SMIC families have NO FLEXIBILITY:
+- High housing cost (€850) → tight food budget
+- Low housing cost (€600) → slightly more breathing room
 - But neither scenario provides genuine affordability
 
-**Sandwich Generation Crisis (Updated with Housing Context):**
-A 45-year-old supporting both aging parent (â‚¬334) and adult child (â‚¬304) faces:
-- Food costs: â‚¬942/month
-- Housing: â‚¬700-850/month
-- Utilities, transport, childcare: â‚¬400/month
-- **Total minimum: â‚¬2,042-2,192/month**
-- On median income (â‚¬3,500/month): **41-48% consumed**
-- On SMIC (â‚¬1,750/month): **IMPOSSIBLEâ€”exceeds income**
+**Sandwich Generation Crisis (Updated with Per-Capita Methodology):**
+A 45-year-old supporting both aging parent (€136.33) and adult child (€123.94) faces:
+- Base household: €303.65/month
+- Add parent (1.10× multiplier): €136.33/month
+- Add adult child (1.0× multiplier): €123.94/month
+- Total food costs: €563.92/month
+- Housing: €700-850/month
+- Utilities, transport, childcare: €400/month
+- **Total minimum: €1,663-1,813/month**
+- On median income (€3,500/month): **48-52% consumed** (still manageable)
+- On SMIC (€1,750/month): **95-104%** (impossible—exceeds income by €113-213/month even before clothing, healthcare, insurance)
 
 ---
 
@@ -400,37 +405,37 @@ A 45-year-old supporting both aging parent (â‚¬334) and adult child (â‚¬
 
 **Critical Limitation of Previous Analysis:**
 
-The household composition analysis (Section 6.3) showed that SMIC families have â‚¬150-300/month remaining after food, housing, utilities, transport, and childcare. However, this analysis **omitted essential non-food expenses that all families must cover**, making it incomplete.
+The household composition analysis (Section 6.3) showed that SMIC families have €150-300/month remaining after food, housing, utilities, transport, and childcare. However, this analysis **omitted essential non-food expenses that all families must cover**, making it incomplete.
 
 **Visualization: 08_complete_budget_reality.png - All Essential Monthly Costs**
 
-[Complete Budget Reality Chart - See 08_complete_budget_reality.png attachment]
+![Complete Budget Reality Chart](08_complete_budget_reality.png)
 
 #### The Complete Cost Structure (One Child, Age 0-3)
 
-**SMIC Family (â‚¬1,750/month):**
+**SMIC Family (€1,750/month):**
 
 | Expense Category | Monthly Cost |
 |---|---|
-| Housing (average â‚¬600-850 range) | â‚¬725 |
-| Food (real complete basket) | â‚¬304 |
-| Utilities (electric, water, gas) | â‚¬150 |
-| Childcare (ages 0-3, part-time) | â‚¬200 |
-| Transport (metro pass) | â‚¬100 |
-| **Subtotal (Fixed Essentials)** | **â‚¬1,479** |
-| Clothing (children grow, wear out) | â‚¬90 |
-| Healthcare (prescriptions, doctor visits, dental) | â‚¬75 |
-| Phone/Internet (essential for employment/school) | â‚¬40 |
-| Insurance (car, renter's liability, household) | â‚¬45 |
-| School Supplies/Books | â‚¬30 |
-| Household Basics (soap, detergent, repairs) | â‚¬40 |
-| Personal Care (toothpaste, haircuts, shampoo) | â‚¬25 |
-| **Subtotal (Essential Extras)** | **â‚¬345** |
-| **TOTAL ESSENTIAL COSTS** | **â‚¬1,824** |
-| Monthly Income | â‚¬1,750 |
-| **MONTHLY DEFICIT** | **-â‚¬74** |
+| Housing (average €600-850 range) | €725 |
+| Food (real complete basket) | €304 |
+| Utilities (electric, water, gas) | €150 |
+| Childcare (ages 0-3, part-time) | €200 |
+| Transport (metro pass) | €100 |
+| **Subtotal (Fixed Essentials)** | **€1,479** |
+| Clothing (children grow, wear out) | €90 |
+| Healthcare (prescriptions, doctor visits, dental) | €75 |
+| Phone/Internet (essential for employment/school) | €40 |
+| Insurance (car, renter's liability, household) | €45 |
+| School Supplies/Books | €30 |
+| Household Basics (soap, detergent, repairs) | €40 |
+| Personal Care (toothpaste, haircuts, shampoo) | €25 |
+| **Subtotal (Essential Extras)** | **€345** |
+| **TOTAL ESSENTIAL COSTS** | **€1,824** |
+| Monthly Income | €1,750 |
+| **MONTHLY DEFICIT** | **-€74** |
 
-**What This Means:** SMIC families are â‚¬74/month in deficit before considering:
+**What This Means:** SMIC families are €74/month in deficit before considering:
 - Emergency savings (impossible)
 - Debt repayment (credit cards, loans)
 - School costs beyond basics (field trips, activities)
@@ -439,33 +444,33 @@ The household composition analysis (Section 6.3) showed that SMIC families have 
 - Clothing for winter weather
 - One-time costs (shoes, new mattress, winter coat)
 
-**Median Family (â‚¬3,500/month):**
+**Median Family (€3,500/month):**
 
 | Expense Category | Monthly Cost |
 |---|---|
-| Housing (average â‚¬1,000-1,300 range) | â‚¬1,150 |
-| Food (real complete basket) | â‚¬304 |
-| Utilities | â‚¬150 |
-| Childcare | â‚¬200 |
-| Transport | â‚¬100 |
-| Clothing | â‚¬90 |
-| Healthcare | â‚¬75 |
-| Phone/Internet | â‚¬40 |
-| Insurance | â‚¬45 |
-| School Supplies | â‚¬30 |
-| Household Basics | â‚¬40 |
-| Personal Care | â‚¬25 |
-| **TOTAL ESSENTIAL COSTS** | **â‚¬2,249** |
-| Monthly Income | â‚¬3,500 |
-| **MONTHLY SURPLUS** | **â‚¬1,251** |
+| Housing (average €1,000-1,300 range) | €1,150 |
+| Food (real complete basket) | €304 |
+| Utilities | €150 |
+| Childcare | €200 |
+| Transport | €100 |
+| Clothing | €90 |
+| Healthcare | €75 |
+| Phone/Internet | €40 |
+| Insurance | €45 |
+| School Supplies | €30 |
+| Household Basics | €40 |
+| Personal Care | €25 |
+| **TOTAL ESSENTIAL COSTS** | **€2,249** |
+| Monthly Income | €3,500 |
+| **MONTHLY SURPLUS** | **€1,251** |
 
 **Structural Reality:**
 
 | Metric | SMIC | Median | Gap |
 |---|---|---|---|
-| Monthly Income | â‚¬1,750 | â‚¬3,500 | â‚¬1,750 |
-| Essential Costs | â‚¬1,824 | â‚¬2,249 | â‚¬425 |
-| Remaining Budget | **-â‚¬74** | **â‚¬1,251** | **â‚¬1,325** |
+| Monthly Income | €1,750 | €3,500 | €1,750 |
+| Essential Costs | €1,824 | €2,249 | €425 |
+| Remaining Budget | **-€74** | **€1,251** | **€1,325** |
 | Deficit as % of Income | **-4.2%** | N/A | N/A |
 
 #### What SMIC Families Actually Do
@@ -473,12 +478,12 @@ The household composition analysis (Section 6.3) showed that SMIC families have 
 Since income doesn't cover expenses, SMIC families survive through:
 
 **1. Government Transfers (Structural Necessity)**
-- CAF (housing allowance): â‚¬200-400/month
-- Child benefits: â‚¬100-150/month per child
-- These are *not supplemental help*â€”they are *required for survival*
+- CAF (housing allowance): €200-400/month
+- Child benefits: €100-150/month per child
+- These are *not supplemental help*—they are *required for survival*
 
-With transfers: â‚¬1,750 + â‚¬300-550 = â‚¬2,050-2,300/month
-Result: Break-even or small surplus (â‚¬50-500/month)
+With transfers: €1,750 + €300-550 = €2,050-2,300/month
+Result: Break-even or small surplus (€50-500/month)
 
 **2. Debt Accumulation**
 - Credit cards for unexpected costs
@@ -508,29 +513,29 @@ Result: Break-even or small surplus (â‚¬50-500/month)
 **Critical Finding:** SMIC families cannot survive on SMIC income alone. Government transfers (CAF, child benefits, housing allowance) are **structural necessities**, not safety nets.
 
 Without these transfers, SMIC families face:
-- â‚¬1,824 total costs
-- â‚¬1,750 income
-- **â‚¬74/month deficit** even before emergencies
+- €1,824 total costs
+- €1,750 income
+- **€74/month deficit** even before emergencies
 
 **This is why:**
-- 22% of French households receive housing assistance (not "extra help"â€”survival requirement)
+- 22% of French households receive housing assistance (not "extra help"—survival requirement)
 - 40% of families with children receive CAF (structural necessity)
-- SMIC is politically protected at high rates (â‚¬1,750/month) precisely because it's insufficient alone
+- SMIC is politically protected at high rates (€1,750/month) precisely because it's insufficient alone
 
 #### The Sandwich Generation Reality
 
-For a 45-year-old supporting aging parent (â‚¬334/month food cost) + adult child (â‚¬304/month):
+For a 45-year-old supporting aging parent (€334/month food cost) + adult child (€304/month):
 
 | Expense | Cost |
 |---|---|
-| Food costs for 3 people | â‚¬941/month |
-| Housing (larger apartment) | â‚¬800/month |
-| All other essentials | â‚¬400/month |
-| **Total** | **â‚¬2,141/month** |
+| Food costs for 3 people | €941/month |
+| Housing (larger apartment) | €800/month |
+| All other essentials | €400/month |
+| **Total** | **€2,141/month** |
 | **% of median income** | **61%** |
 | **Status** | **IMPOSSIBLE** |
 
-Even at median income (â‚¬3,500), this leaves only â‚¬1,359 for two additional people (or extended family), higher utilities, medical care for elderly, etc.
+Even at median income (€3,500), this leaves only €1,359 for two additional people (or extended family), higher utilities, medical care for elderly, etc.
 
 On SMIC? Completely unaffordable.
 
@@ -563,16 +568,16 @@ Elderly people require specialized dietary items not in official baskets:
 - Health-specific items (low-sodium, diabetic options)
 - Nutritional support for bone health, cognitive function
 
-**Real cost of feeding a senior:** â‚¬334/month MORE than baseline  
+**Real cost of feeding a senior:** €334/month MORE than baseline  
 **Official basket treatment:** Counted as "standard adult"  
 **Policy consequence:** Elderly dietary needs are invisible in affordability calculations
 
 #### Finding 5: Teenager Invisibility
 
 Teenagers experience a 110% food cost increase between age 12 and age 13:
-- Child (7-12): â‚¬136.64 cost increase
-- Teenager (13-18): â‚¬288.47 cost increase
-- Cost jump: +â‚¬151.83 (+111%)
+- Child (7-12): €136.64 cost increase
+- Teenager (13-18): €288.47 cost increase
+- Cost jump: +€151.83 (+111%)
 
 This abrupt transition is **not captured in official baskets**, which treat teenagers as children.
 
@@ -584,14 +589,14 @@ This abrupt transition is **not captured in official baskets**, which treat teen
 
 **This is not cultural choice. This is economic calculus.**
 
-**Young Couple at Median Income (â‚¬42,000/year = â‚¬3,500/month):**
+**Young Couple at Median Income (€42,000/year = €3,500/month):**
 - 1 child: 12.6% of income on food (manageable)
 - 2 children: 16.5% of income on food (difficult)
 - 3 children: 20.4% of income on food (approaching crisis)
 
-**Young Couple on SMIC (â‚¬21,000/year = â‚¬1,750/month):**
+**Young Couple on SMIC (€21,000/year = €1,750/month):**
 - 1 child: 25.2% of income on food (crisis level)
-- 2 children: 38.9% of income on food (impossibleâ€”cannot afford both food and housing)
+- 2 children: 38.9% of income on food (impossible—cannot afford both food and housing)
 
 **Insight:** Families rationally choose not to have children they cannot afford. Each additional child pushes the family closer to financial collapse.
 
@@ -605,7 +610,7 @@ This abrupt transition is **not captured in official baskets**, which treat teen
 
 **Visualization 1: Basket Comparison (01_basket_comparison.png)**
 - **What it shows:** Monthly and annual cost of three baskets
-- **Key numbers:** â‚¬69 â†’ â‚¬304 â†’ â‚¬384
+- **Key numbers:** €69 → €304 → €384
 - **Message:** "Official statistics underestimate real costs by 342%"
 - **Where to place:** After discussing the three baskets framework
 - **Time to explain:** 1 minute
@@ -614,7 +619,7 @@ This abrupt transition is **not captured in official baskets**, which treat teen
 **Visualization 2: Affordability Cliffs (02_affordability_cliffs.png)**
 - **What it shows:** Food as % of monthly income by income level
 - **Key zones:** Green (excellent <10%), Yellow (manageable 10-20%), Red (crisis >20%)
-- **Message:** "Below â‚¬35k, families face impossible choices"
+- **Message:** "Below €35k, families face impossible choices"
 - **Where to place:** When discussing income-based affordability
 - **Time to explain:** 1.5 minutes
 - **Audience takeaway:** The cliff is vertical, not gradual
@@ -643,35 +648,35 @@ This abrupt transition is **not captured in official baskets**, which treat teen
 - **Time to explain:** 1 minute
 - **Audience takeaway:** Poor cannot afford health
 
-**Visualization 6: The Family Squeeze (06_family_squeeze.png)** â­ **NEW**
+**Visualization 6: The Family Squeeze (06_family_squeeze.png)** ⭐ **NEW**
 - **What it shows:** How each family member (baby, teenager, senior) reduces remaining annual budget for SMIC vs Median income
-- **Key insight:** Identical food cost increase (â‚¬288 for teenager) has different consequences by income
+- **Key insight:** Identical food cost increase (€288 for teenager) has different consequences by income
   - SMIC loses 24% of remaining margin
   - Median loses only 7% of remaining margin
 - **Message:** "Family growth multiplicatively erodes already-thin affordability for low-income families"
 - **Where to place:** Core of household composition discussion (Section 6.3)
 - **Time to explain:** 2 minutes
 - **Audience takeaway:** Family structure becomes a poverty determinant, not a choice variable
-- **Professional note:** Shows why "percentage of income" alone is insufficient for policyâ€”absolute margin matters
+- **Professional note:** Shows why "percentage of income" alone is insufficient for policy—absolute margin matters
 
-**Visualization 7: Housing Burden by Income (07_housing_burden.png)** â­ **NEW**
+**Visualization 7: Housing Burden by Income (07_housing_burden.png)** ⭐ **NEW**
 - **What it shows:** Housing cost variation (whisker chart) for SMIC vs Median income levels
-  - SMIC range: â‚¬600-850/month (34-49% of income)
-  - Median range: â‚¬1,000-1,300/month (29-37% of income)
+  - SMIC range: €600-850/month (34-49% of income)
+  - Median range: €1,000-1,300/month (29-37% of income)
 - **Key insight:** Housing costs consume majority of low-income budget, leaving minimal margin for food costs
-- **Message:** "Food affordability cannot be understood in isolationâ€”housing costs compress the remaining budget"
+- **Message:** "Food affordability cannot be understood in isolation—housing costs compress the remaining budget"
 - **Where to place:** Supporting context in household composition discussion (Section 6.3B)
 - **Time to explain:** 1.5 minutes
 - **Audience takeaway:** SMIC families have structurally constrained budgets; adding family members is mathematically impossible
-- **Professional note:** Explains why single thresholds (â‚¬14.4k remaining) are insufficient; variation matters
+- **Professional note:** Explains why single thresholds (€14.4k remaining) are insufficient; variation matters
 
-**Visualization 8: Complete Budget Reality (08_complete_budget_reality.png)** â­ **CRITICAL NEW INSIGHT**
+**Visualization 8: Complete Budget Reality (08_complete_budget_reality.png)** ⭐ **CRITICAL NEW INSIGHT**
 - **What it shows:** Stacked bar chart comparing SMIC vs Median families, showing ALL essential monthly costs (housing, food, utilities, childcare, transport, clothing, healthcare, phone, insurance, school supplies, household basics, personal care)
-- **Key insight:** SMIC families face a â‚¬74/month deficit from essential costs alone, BEFORE emergencies or savings
-  - SMIC total costs: â‚¬1,824/month vs income â‚¬1,750 = **â‚¬74 DEFICIT**
-  - Median total costs: â‚¬2,249/month vs income â‚¬3,500 = **â‚¬1,251 surplus**
-  - Structural gap: **â‚¬1,325/month difference**
-- **Message:** "Government transfers (CAF, housing allowance) are not supplemental helpâ€”they are survival requirements for SMIC families"
+- **Key insight:** SMIC families face a €74/month deficit from essential costs alone, BEFORE emergencies or savings
+  - SMIC total costs: €1,824/month vs income €1,750 = **€74 DEFICIT**
+  - Median total costs: €2,249/month vs income €3,500 = **€1,251 surplus**
+  - Structural gap: **€1,325/month difference**
+- **Message:** "Government transfers (CAF, housing allowance) are not supplemental help—they are survival requirements for SMIC families"
 - **Where to place:** Core of economic reality discussion (Section 6.3C)
 - **Time to explain:** 2-3 minutes (powerful moment)
 - **Audience takeaway:** Income insufficiency is structural, not behavioral; poverty is built into the wage structure
@@ -681,19 +686,19 @@ This abrupt transition is **not captured in official baskets**, which treat teen
 ### 7.2 Presentation Order
 
 **In a 22-28 minute presentation (including household composition + complete budget reality):**
-1. Start with Visualization 1 (basket comparison) - hook with the gap (â‚¬69 â†’ â‚¬304)
+1. Start with Visualization 1 (basket comparison) - hook with the gap (€69 → €304)
 2. Use Visualization 2 (affordability cliffs) - show income disparities and crisis zones
 3. Reference Visualization 4 (basket composition) - explain what's missing (13 vs 34 vs 41 items)
-4. **Present Visualization 6 (family squeeze)** â­ **- introduce composition effect**
+4. **Present Visualization 6 (family squeeze)** ⭐ **- introduce composition effect**
    - Shows SMIC vs Median comparison
    - Shows how teenagers/seniors reduce remaining budget
    - Connects to housing constraint (next visualization)
-5. **Show Visualization 7 (housing burden)** â­ **- provide housing context**
-   - Explains why margin matters (housing costs â‚¬600-850 for SMIC)
+5. **Show Visualization 7 (housing burden)** ⭐ **- provide housing context**
+   - Explains why margin matters (housing costs €600-850 for SMIC)
    - Shows variation within income bracket
-6. **Present Visualization 8 (complete budget reality)** â­â­ **CRITICAL - show structural poverty (new insight)**
+6. **Present Visualization 8 (complete budget reality)** ⭐⭐ **CRITICAL - show structural poverty (new insight)**
    - Shows ALL essential costs (12 categories)
-   - Reveals SMIC families are in deficit: â‚¬1,824 costs vs â‚¬1,750 income = -â‚¬74/month
+   - Reveals SMIC families are in deficit: €1,824 costs vs €1,750 income = -€74/month
    - Demonstrates government transfers (CAF) are survival requirement
    - Explains why composition changes push families into debt
 7. Reference Visualizations 3 & 5 for supporting evidence (gap analysis, health premium)
@@ -711,7 +716,7 @@ Focus on Visualizations 1, 2, 6, 8 - emphasize market opportunity and data compl
 - Three baskets (Visualizations 1, 4): 2 min
 - Affordability cliffs (Visualization 2): 2 min
 - **Household composition (Visualizations 6, 7): 2.5 min**
-- **Complete budget reality (Visualization 8): 2.5-3 min** â† **NEW**
+- **Complete budget reality (Visualization 8): 2.5-3 min** ← **NEW**
 - Impact & significance: 2 min
 - Close: 1-2 min
 - **Total: 22-28 minutes** (expanded from 18-22)
@@ -738,7 +743,7 @@ When seniors, teenagers, allergy sufferers, and families with special dietary ne
 
 ### 8.3 Health Inequality Is Structural
 
-Below â‚¬35k income, families cannot afford both healthy food and housing. This is not a choiceâ€”it's structural.
+Below €35k income, families cannot afford both healthy food and housing. This is not a choice—it's structural.
 
 **Recommendation:** Food subsidies should be indexed to health-quality baskets, not minimal survival baskets.
 
@@ -760,17 +765,17 @@ Low birth rates in Paris correlate directly with food affordability becoming imp
 
 ### 9.1 Revenue Streams
 
-**1. Software-as-a-Service (SaaS):** â‚¬50-500/month
+**1. Software-as-a-Service (SaaS):** €50-500/month
 - Small retailers monitoring local competitor pricing
 - NGOs tracking affordability in their service areas
 - Market research firms collecting category-specific data
 
-**2. Data Licensing:** â‚¬500-5,000/month
+**2. Data Licensing:** €500-5,000/month
 - Policy institutes purchasing real affordability data
 - Academic researchers accessing anonymized pricing datasets
 - International organizations benchmarking food costs across markets
 
-**3. Consulting Services:** â‚¬5,000-50,000/engagement
+**3. Consulting Services:** €5,000-50,000/engagement
 - Custom affordability studies for governments
 - Market analysis for retailers entering new regions
 - Demographic impact assessments for policy proposals
@@ -778,8 +783,8 @@ Low birth rates in Paris correlate directly with food affordability becoming imp
 ### 9.2 Market Opportunity
 
 **Total Addressable Market:**
-- 27 EU member states Ã— 50 million households = 1.35 billion potential data points
-- Each contributing even â‚¬1/month = â‚¬1.35 billion potential revenue at scale
+- 27 EU member states × 50 million households = 1.35 billion potential data points
+- Each contributing even €1/month = €1.35 billion potential revenue at scale
 
 **Competitive Advantages:**
 - Real-time consumer-level data collection
@@ -804,15 +809,15 @@ This capstone project demonstrates that **official food affordability statistics
 
 Using Snipper Tool, we collected real pricing data and revealed:
 
-1. **The Gap:** Real family food costs are 4.4x higher than official statistics (â‚¬304 vs â‚¬69/month)
+1. **The Gap:** Real family food costs are 4.4x higher than official statistics (€304 vs €69/month)
 
-2. **The Crisis:** Below â‚¬35k income, families face impossible affordability cliffs
+2. **The Crisis:** Below €35k income, families face impossible affordability cliffs
 
-3. **The Multiplier:** Household composition directly determines poverty severityâ€”a senior costs 4.4x more to feed than a baby
+3. **The Multiplier:** Household composition directly determines poverty severity—a senior costs 4.4x more to feed than a baby
 
 4. **The Invisibility:** Official statistics erase seniors, teenagers, and families with special needs from policy view
 
-5. **The Demographic Consequence:** Food affordability suppresses birth ratesâ€”families rationally choose not to have children they cannot afford
+5. **The Demographic Consequence:** Food affordability suppresses birth rates—families rationally choose not to have children they cannot afford
 
 ### 10.2 Innovation
 
@@ -844,15 +849,15 @@ What gets measured is what gets managed. What gets managed can be fixed.
 
 ### Government & Official Sources
 
-INSEE (Institut National de la Statistique et des Ã‰tudes Ã‰conomiques). (2025). *Indices des prix Ã  la consommation*. Retrieved from https://www.insee.fr/fr/statistiques/2416261
+INSEE (Institut National de la Statistique et des Études Économiques). (2025). *Indices des prix à la consommation*. Retrieved from https://www.insee.fr/fr/statistiques/2416261
 
 INSEE. (2025). *Salaire minimum interprofessionnel de croissance (SMIC)*. Retrieved from https://www.insee.fr/fr/metadonnees/definitions/c1989
 
-INSEE. (2024). *Panier de consommation - Articles emblÃ©matiques*. Retrieved from https://www.insee.fr/fr/statistiques/serie/001653805
+INSEE. (2024). *Panier de consommation - Articles emblématiques*. Retrieved from https://www.insee.fr/fr/statistiques/serie/001653805
 
-MinistÃ¨re de l'Ã‰conomie et des Finances. (2025). *Prix des produits alimentaires Ã  la consommation*. Retrieved from https://www.economie.gouv.fr/statistiques
+Ministère de l'Économie et des Finances. (2025). *Prix des produits alimentaires à la consommation*. Retrieved from https://www.economie.gouv.fr/statistiques
 
-SNCF Connect. (2025). *Transport coÃ»ts et tarifs - ÃŽle-de-France*. Retrieved from https://www.sncf-connect.com/
+SNCF Connect. (2025). *Transport coûts et tarifs - Île-de-France*. Retrieved from https://www.sncf-connect.com/
 
 ### Academic & Research References
 
@@ -889,15 +894,15 @@ EasyOCR. (2025). *Optical character recognition for 80+ languages* [Software]. h
 
 Fonseca, H. (2026). *Real data, real impact: Snipper Tool and the hidden affordability crisis in Paris* (Unpublished capstone project). Miami Dade College.
 
-Institut National de la Statistique et des Ã‰tudes Ã‰conomiques. (2024). *Panier de consommation - Articles emblÃ©matiques*. https://www.insee.fr/fr/statistiques/serie/001653805
+Institut National de la Statistique et des Études Économiques. (2024). *Panier de consommation - Articles emblématiques*. https://www.insee.fr/fr/statistiques/serie/001653805
 
-Institut National de la Statistique et des Ã‰tudes Ã‰conomiques. (2025). *Indices des prix Ã  la consommation*. https://www.insee.fr/fr/statistiques/2416261
+Institut National de la Statistique et des Études Économiques. (2025). *Indices des prix à la consommation*. https://www.insee.fr/fr/statistiques/2416261
 
-Institut National de la Statistique et des Ã‰tudes Ã‰conomiques. (2025). *Salaire minimum interprofessionnel de croissance (SMIC)*. https://www.insee.fr/fr/metadonnees/definitions/c1989
+Institut National de la Statistique et des Études Économiques. (2025). *Salaire minimum interprofessionnel de croissance (SMIC)*. https://www.insee.fr/fr/metadonnees/definitions/c1989
 
 Kanbur, R., & Stiglitz, J. E. (2015). Dynastic inequality, mobility, and equality of opportunity. *Journal of Economic Inequality*, 13(4), 567-589.
 
-MinistÃ¨re de l'Ã‰conomie et des Finances. (2025). *Prix des produits alimentaires Ã  la consommation*. https://www.economie.gouv.fr/statistiques
+Ministère de l'Économie et des Finances. (2025). *Prix des produits alimentaires à la consommation*. https://www.economie.gouv.fr/statistiques
 
 Piketty, T. (2014). *Capital in the twenty-first century*. Harvard University Press.
 
@@ -905,7 +910,7 @@ Python Software Foundation. (2025). *Pandas: Data analysis library* [Software]. 
 
 Sen, A. (1999). *Development as freedom*. Oxford University Press.
 
-SNCF Connect. (2025). *Transport coÃ»ts et tarifs - ÃŽle-de-France*. https://www.sncf-connect.com/
+SNCF Connect. (2025). *Transport coûts et tarifs - Île-de-France*. https://www.sncf-connect.com/
 
 ---
 

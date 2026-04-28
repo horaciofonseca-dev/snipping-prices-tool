@@ -486,20 +486,22 @@ def create_family_squeeze_chart():
     compositions = ['Base\n(2a+1c)', '+Baby\n(0-2yr)', '+Child\n(7-12yr)', '+Teenager\n(13-18)']
 
     # Remaining budget after REAL COMPLETE BASKET (€303.65/month)
+    # Per-capita methodology: €303.65 / 2.45 = €123.94/month per adult-equivalent
+    # Member costs: Baby €30.98, Child €55.77, Teen €117.74/month
     # SMIC: €21,000/year = €1,750/month income
-    # Calculated: (€1,750 - food_cost - other_member_cost) × 12 months
+    # Calculated: (€1,750 - food_cost - member_cost) × 12 months
     # Base: €1,750 - €303.65 = €1,446.35/month × 12 = €17,356/year
-    # +Baby: €1,750 - €303.65 - €75.91 = €1,370.44/month × 12 = €16,445/year
-    # +Child: €1,750 - €303.65 - €136.64 = €1,309.71/month × 12 = €15,716/year
-    # +Teen: €1,750 - €303.65 - €288.47 = €1,157.88/month × 12 = €13,895/year
-    smic_remaining = [17356, 16445, 15716, 13895]
+    # +Baby: €1,750 - €303.65 - €30.98 = €1,415.37/month × 12 = €16,984/year
+    # +Child: €1,750 - €303.65 - €55.77 = €1,390.58/month × 12 = €16,687/year
+    # +Teen: €1,750 - €303.65 - €117.74 = €1,328.61/month × 12 = €15,943/year
+    smic_remaining = [17356, 16984, 16687, 15943]
 
     # Median: €42,000/year = €3,500/month income
     # Base: €3,500 - €303.65 = €3,196.35/month × 12 = €38,356/year
-    # +Baby: €3,500 - €303.65 - €75.91 = €3,120.44/month × 12 = €37,445/year
-    # +Child: €3,500 - €303.65 - €136.64 = €3,059.71/month × 12 = €36,716/year
-    # +Teen: €3,500 - €303.65 - €288.47 = €2,907.88/month × 12 = €34,895/year
-    median_remaining = [38356, 37445, 36716, 34895]
+    # +Baby: €3,500 - €303.65 - €30.98 = €3,165.37/month × 12 = €37,984/year
+    # +Child: €3,500 - €303.65 - €55.77 = €3,140.58/month × 12 = €37,687/year
+    # +Teen: €3,500 - €303.65 - €117.74 = €3,078.61/month × 12 = €36,943/year
+    median_remaining = [38356, 37984, 37687, 36943]
 
     # Essential expenses threshold (€14,400/year = €1,200/month for SMIC family)
     essential_threshold = 14400
