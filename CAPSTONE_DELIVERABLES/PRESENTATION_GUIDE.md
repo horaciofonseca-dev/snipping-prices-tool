@@ -222,15 +222,17 @@
 >
 > Base household: 2 adults + 1 child. Remaining budget after food costs: €17,356 per year.
 >
-> Now add a teenager. The teenager costs an extra €288/month to feed. 
+> Now add a teenager. The teenager costs an extra €288.47/month to feed. That's €3,461 per year—not €288.
 >
-> The SMIC family loses €288 of remaining budget. Now they have €17,068.
+> The SMIC family loses €3,461 of remaining budget. Now they have €13,895.
+>
+> Compare that to a median income family (€42,000/year). Same teenager, same monthly cost. But the median family? They have €34,895 remaining. A loss of €6,281 sounds bigger—but it's only 7% of their margin. The SMIC family just lost 24% of theirs.
 >
 > **But here's the cruelty: that remaining budget must cover housing.**
 >
 > [Point to 07_housing_burden.png] Look at housing costs. A SMIC family pays €600 to €850 per month for a basic apartment. That's €7,200 to €10,200 per year.
 >
-> So after food (€303.65/month) and housing (€725/month average), they have maybe €200 remaining.
+> So after food (€303.65/month) and housing (€725/month average), they have maybe €200-300 remaining per month.
 >
 > Add utilities. Add transport. Add childcare.
 >
@@ -238,7 +240,7 @@
 >
 > And here's what makes it even worse: *Families don't choose composition.*
 >
-> They don't say, 'Let's not have children because a teenager costs 4.4 times more than a baby.'
+> They don't say, 'Let's not have children because a teenager costs €3,461 more per year.'
 >
 > They *have* children. They *care* for aging parents. And each time they do, the remaining budget—which was already razor-thin—gets squeezed even more.
 >

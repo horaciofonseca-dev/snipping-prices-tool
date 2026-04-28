@@ -93,12 +93,14 @@ Location: `CAPSTONE_DELIVERABLES/` and `capstone/synthetic_data/basket_analysis/
    - Visual: Bar chart showing remaining annual budget with essential expense threshold
    - Use in supporting materials (keeps analysis complete)
 
-6. **06_family_squeeze.png** ⭐ **NEW & CRITICAL** - How household composition reduces remaining budget
-   - Visual: Clustered bar chart comparing SMIC vs Median, showing base → +baby → +teenager
-   - Key insight: €288 added cost has different impact by income (SMIC loses 24% of margin, Median loses 7%)
+6. **06_family_squeeze.png** ⭐ **NEW & CRITICAL** - How household composition reduces remaining annual budget
+   - Visual: Clustered bar chart comparing SMIC vs Median, showing base → +baby → +teenager progression
+   - Key insight: €288.47/month teenager costs (+€3,461/year) has different impact by income
+     - SMIC: loses €3,461/year (24% of remaining margin)
+     - Median: loses €6,281/year (only 7% of remaining margin)
    - Use in Segment 3: Part C (household composition multiplier effect)
-   - **Professional annotation:** Explains why "percentage of income" alone is insufficient; absolute margin matters
-   - **This is your emotional center chart—shows structural impossibility**
+   - **Professional annotation:** Explains why "percentage of income" alone is insufficient; absolute margin matters for affordability
+   - **This is your emotional center chart—shows structural impossibility for SMIC families**
 
 7. **07_housing_burden.png** ⭐ **NEW & CRITICAL** - Housing cost variation by income (whisker chart)
    - Visual: Whisker plot showing rent range for SMIC (€600-850/month) vs Median (€1,000-1,300/month)

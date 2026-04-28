@@ -322,27 +322,28 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 
 **Base Household:** 2 adults + 1 child (age 7-10)
 
-**The Squeeze Effect (Real Complete Basket at €303.65/month):**
+**The Squeeze Effect (Real Complete Basket at €303.65/month) - Annual Remaining Budgets:**
 
-| Income Level | Base | +Baby | +Teenager | Margin Loss |
+| Income Level | Base | +Baby | +Teenager | Annual Loss |
 |---|---|---|---|---|
-| **SMIC (€21k)** | €17,356 | €17,280 | €17,068 | **-€288** |
-| **Median (€42k)** | €41,176 | €41,100 | €40,888 | **-€288** |
+| **SMIC (€21k)** | €17,356 | €16,445 | €13,895 | **-€3,461** |
+| **Median (€42k)** | €41,176 | €37,445 | €34,895 | **-€6,281** |
 
-**Critical Finding:** While the food cost increase is identical (€288 for a teenager), the IMPACT differs dramatically:
-- **SMIC family:** Loss of €288/year = €24/month squeeze on already-tight budget
-- **After housing (€600-850/month), utilities, transport, childcare:** SMIC family has only €166-300/month remaining
-- **Adding a teenager:** Remaining margin shrinks to €34-166/month—below realistic emergency buffer
+**Critical Finding:** While the monthly food cost increase is identical (€288.47 for a teenager = €3,461/year), the IMPACT differs dramatically:
+- **SMIC family:** Loss of €3,461/year (€288.47/month × 12) represents 24% of remaining budget
+- **After housing (€600-850/month), utilities, transport, childcare:** SMIC family has only €150-300/month remaining
+- **Adding a teenager:** Remaining margin shrinks further to near-zero after housing and essential expenses—below realistic emergency buffer
+- **Median family:** Same teenager costs €288.47/month, but represents only 7% of their remaining margin—manageable
 
 **Cost Impact of Adding Each Family Member to Base (Real Complete Basket):**
 
-| Member Type | Monthly Cost Increase | % Increase | Multiplier Factor |
-|---|---|---|---|
-| Baby (0-2) | +€75.91 | +25% | 1.0x (baseline) |
-| Child (3-6) | +€121.46 | +40% | 1.6x baby |
-| Child (7-12) | +€136.64 | +45% | 1.8x baby |
-| Teenager (13-18) | +€288.47 | +95% | **3.8x baby** |
-| Senior (65+) | +€334.01 | +110% | **4.4x baby** |
+| Member Type | Monthly Cost | Annual Cost Increase | % Increase | Multiplier Factor |
+|---|---|---|---|---|
+| Baby (0-2) | +€75.91 | **+€911/year** | +25% | 1.0x (baseline) |
+| Child (3-6) | +€121.46 | **+€1,457/year** | +40% | 1.6x baby |
+| Child (7-12) | +€136.64 | **+€1,640/year** | +45% | 1.8x baby |
+| Teenager (13-18) | +€288.47 | **+€3,461/year** | +95% | **3.8x baby** |
+| Senior (65+) | +€334.01 | **+€4,008/year** | +110% | **4.4x baby** |
 
 **Policy Consequence:** Official statistics count all household members as equivalent units. This ignores that:
 - Teenagers cost 4x more to feed than babies
