@@ -314,32 +314,84 @@ Data and code can be downloaded from: https://github.com/horaciofonseca-dev/snip
 
 **Key Insight:** The affordability cliff is not gradual. It's a vertical drop. Between €28k-35k income, families transition from "manageable" to "impossible."
 
-### 6.3 Household Composition Multiplier Effect
+### 6.3 Household Composition Multiplier Effect: The Family Squeeze
 
-[INSERT VISUALIZATION: 06_household_cost_impact.png - BAR CHART RANKING BY COST]
+**Visualization: 06_family_squeeze.png - How Each Family Member Reduces Remaining Budget**
 
-**Base Household:** 2 adults + 1 child (age 7-10) = €303.65/month
+![Family Squeeze Chart](06_family_squeeze.png)
 
-**Cost Impact of Adding One Member (Real Complete Basket):**
+**Base Household:** 2 adults + 1 child (age 7-10)
 
-| Member Type | Monthly Cost | % Increase | New Total | SMIC % Impact |
+**The Squeeze Effect (Real Complete Basket at €303.65/month):**
+
+| Income Level | Base | +Baby | +Teenager | Margin Loss |
 |---|---|---|---|---|
-| Baby (0-2) | +€75.91 | +25% | €379.56 | 21.7% |
-| Child (3-6) | +€121.46 | +40% | €425.11 | 24.3% |
-| Child (7-12) | +€136.64 | +45% | €440.29 | 25.2% |
-| Teenager (13-18) | +€288.47 | +95% | €592.12 | 33.8% |
-| Additional Adult | +€303.65 | +100% | €607.30 | 34.7% |
-| Senior (65+) | +€334.01 | +110% | €637.66 | 36.4% |
+| **SMIC (€21k)** | €17,356 | €17,280 | €17,068 | **-€288** |
+| **Median (€42k)** | €41,176 | €41,100 | €40,888 | **-€288** |
 
-**Critical Insight:** A teenager is 3.8x more expensive to add than a baby. A senior is 4.4x more expensive than a baby.
+**Critical Finding:** While the food cost increase is identical (€288 for a teenager), the IMPACT differs dramatically:
+- **SMIC family:** Loss of €288/year = €24/month squeeze on already-tight budget
+- **After housing (€600-850/month), utilities, transport, childcare:** SMIC family has only €166-300/month remaining
+- **Adding a teenager:** Remaining margin shrinks to €34-166/month—below realistic emergency buffer
 
-[INSERT VISUALIZATION: 07_affordability_by_composition.png - HEATMAP SHOWING CRISIS ZONES]
+**Cost Impact of Adding Each Family Member to Base (Real Complete Basket):**
 
-**The Sandwich Generation Crisis:**
+| Member Type | Monthly Cost Increase | % Increase | Multiplier Factor |
+|---|---|---|---|
+| Baby (0-2) | +€75.91 | +25% | 1.0x (baseline) |
+| Child (3-6) | +€121.46 | +40% | 1.6x baby |
+| Child (7-12) | +€136.64 | +45% | 1.8x baby |
+| Teenager (13-18) | +€288.47 | +95% | **3.8x baby** |
+| Senior (65+) | +€334.01 | +110% | **4.4x baby** |
+
+**Policy Consequence:** Official statistics count all household members as equivalent units. This ignores that:
+- Teenagers cost 4x more to feed than babies
+- Seniors cost 4.4x more to feed than babies
+- Yet families don't choose these compositions—they happen naturally (growth, aging parents)
+- Each addition multiplicatively erodes already-thin affordability margins for low-income families
+
+**Professional Note:** The Family Squeeze visualization (06_family_squeeze.png) reveals a critical blind spot in affordability policy. By showing remaining budget, it exposes why "percentage of income" alone is insufficient—the absolute margin matters when families face fixed housing costs.
+
+---
+
+### 6.3B Housing Burden Context: Why Cost Variation Matters
+
+**Visualization: 07_housing_burden.png - Housing Cost Range by Income Level**
+
+![Housing Burden Chart](07_housing_burden.png)
+
+**The Housing Cost Reality (2-3 Bedroom Apartment, Paris Region):**
+
+| Income Level | Typical Monthly Rent | Annual Housing Cost | % of Annual Income |
+|---|---|---|---|
+| **SMIC (€21k)** | €600-850 | €7,200-10,200 | **34-49% of income** |
+| **Median (€42k)** | €1,000-1,300 | €12,000-15,600 | **29-37% of income** |
+
+**Critical Context:** When analyzing food affordability for low-income families, housing costs cannot be ignored:
+
+1. **Housing first claim:** SMIC workers pay €600-850 for basic apartment
+2. **Food comes next:** Real basket at €304/month = €3,648/year
+3. **Essential services:** Utilities (€150), transport (€100), childcare (€200+)
+4. **Combined minimum:** €1,200-1,400/month required before healthcare, phone, emergency savings
+
+**Remaining Budget Reality for SMIC Family:**
+- Total monthly income: €1,750
+- Fixed costs (housing + utilities + transport + childcare): €1,050-1,200
+- After real food costs (€304): **€150-300/month remaining**
+
+**Professional Interpretation:** The housing burden variation (whisker chart 07) explains why a single "remaining budget" number (like €14.4k) is insufficient. SMIC families have NO FLEXIBILITY:
+- High housing cost (€850) → tight food budget
+- Low housing cost (€600) → slightly more breathing room
+- But neither scenario provides genuine affordability
+
+**Sandwich Generation Crisis (Updated with Housing Context):**
 A 45-year-old supporting both aging parent (€334) and adult child (€304) faces:
 - Food costs: €942/month
-- Percentage of median income: 26.9% (crisis level)
-- Percentage of SMIC income: 53.8% (catastrophic)
+- Housing: €700-850/month
+- Utilities, transport, childcare: €400/month
+- **Total minimum: €2,042-2,192/month**
+- On median income (€3,500/month): **41-48% consumed**
+- On SMIC (€1,750/month): **IMPOSSIBLE—exceeds income**
 
 ---
 
@@ -433,38 +485,42 @@ This abrupt transition is **not captured in official baskets**, which treat teen
 - **Time to explain:** 1 minute
 - **Audience takeaway:** Poor cannot afford health
 
-**Visualization 6: Household Cost Impact (06_household_cost_impact.png)**
-- **What it shows:** Bar chart ranking members by cost (baby to senior)
-- **Key insight:** 4.4x difference between cheapest and most expensive
-- **Message:** "Adding family members multiplies affordability crisis"
-- **Where to place:** Introducing household composition section
-- **Time to explain:** 1.5 minutes
-- **Audience takeaway:** Family structure determines poverty depth
-
-**Visualization 7: Affordability by Composition (07_affordability_by_composition.png)**
-- **What it shows:** Heatmap of member type × income level with affordability status
-- **Key insight:** Red zones show where composition + income = impossible
-- **Message:** "Household composition is a poverty multiplier"
-- **Where to place:** Core finding about how families break
+**Visualization 6: The Family Squeeze (06_family_squeeze.png)** ⭐ **NEW**
+- **What it shows:** How each family member (baby, teenager, senior) reduces remaining annual budget for SMIC vs Median income
+- **Key insight:** Identical food cost increase (€288 for teenager) has different consequences by income
+  - SMIC loses 24% of remaining margin
+  - Median loses only 7% of remaining margin
+- **Message:** "Family growth multiplicatively erodes already-thin affordability for low-income families"
+- **Where to place:** Core of household composition discussion (Section 6.3)
 - **Time to explain:** 2 minutes
-- **Audience takeaway:** Some families face mathematically impossible situations
+- **Audience takeaway:** Family structure becomes a poverty determinant, not a choice variable
+- **Professional note:** Shows why "percentage of income" alone is insufficient for policy—absolute margin matters
 
-**Visualization 8: Remaining Budget (08_remaining_budget_composition.png)**
-- **What it shows:** How much money remains after food costs
-- **Key insight:** Budget available for rent, utilities, childcare
-- **Message:** "After paying for food, nothing remains for other essentials"
-- **Where to place:** Supporting evidence of crisis
-- **Time to explain:** 1 minute
-- **Audience takeaway:** Food costs crowd out other necessities
+**Visualization 7: Housing Burden by Income (07_housing_burden.png)** ⭐ **NEW**
+- **What it shows:** Housing cost variation (whisker chart) for SMIC vs Median income levels
+  - SMIC range: €600-850/month (34-49% of income)
+  - Median range: €1,000-1,300/month (29-37% of income)
+- **Key insight:** Housing costs consume majority of low-income budget, leaving minimal margin for food costs
+- **Message:** "Food affordability cannot be understood in isolation—housing costs compress the remaining budget"
+- **Where to place:** Supporting context in household composition discussion (Section 6.3B)
+- **Time to explain:** 1.5 minutes
+- **Audience takeaway:** SMIC families have structurally constrained budgets; adding family members is mathematically impossible
+- **Professional note:** Explains why single thresholds (€14.4k remaining) are insufficient; variation matters
 
 ### 7.2 Presentation Order
 
-**In a 15-20 minute presentation:**
-1. Start with Visualization 1 (basket comparison) - hook with the gap
-2. Use Visualization 2 (affordability cliffs) - show income disparities
-3. Reference Visualization 4 (basket composition) - explain what's missing
-4. Present Visualization 6 (household impact) - introduce composition effect
-5. Show Visualization 7 (affordability heatmap) - reveal crisis zones
+**In an 18-22 minute presentation (including household composition):**
+1. Start with Visualization 1 (basket comparison) - hook with the gap (€69 → €304)
+2. Use Visualization 2 (affordability cliffs) - show income disparities and crisis zones
+3. Reference Visualization 4 (basket composition) - explain what's missing (13 vs 34 vs 41 items)
+4. **Present Visualization 6 (family squeeze)** ⭐ **- introduce composition effect (new insight)**
+   - Shows SMIC vs Median comparison
+   - Shows how teenagers/seniors reduce remaining budget
+   - Connects to housing constraint (next visualization)
+5. **Show Visualization 7 (housing burden)** ⭐ **- provide housing context (new insight)**
+   - Explains why margin matters (housing costs €600-850 for SMIC)
+   - Shows variation within income bracket
+6. Reference Visualizations 3 & 5 for supporting evidence (gap analysis, health premium)
 6. Close with Visualization 3 (gap analysis) - summarize what's not counted
 
 **For policy/academic audiences:**

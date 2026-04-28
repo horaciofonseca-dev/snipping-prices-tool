@@ -68,43 +68,53 @@ Condensed version for quick lookup during presentation prep:
 ---
 
 ### **4. VISUALIZATIONS (High-Quality PNG Charts)**
-Location: `capstone/synthetic_data/basket_analysis/`
+Location: `CAPSTONE_DELIVERABLES/` and `capstone/synthetic_data/basket_analysis/`
 
-**All 8 visualizations:**
+**All 7 visualizations:**
 
 1. **01_basket_comparison.png** - Monthly and annual cost comparison across three basket types
    - Visual: Stacked/grouped columns showing €69 → €304 → €384
    - Use in Segment 3: Part A (when introducing the three baskets)
 
 2. **02_affordability_cliffs.png** - Percentage of income spent on food by income level
-   - Visual: Line chart or bars showing crisis thresholds
-   - Use in Segment 3: Part B (affordability crisis)
+   - Visual: Bar chart with color zones (green/yellow/red) showing crisis thresholds
+   - Use in Segment 3: Part B (affordability crisis by income)
+   - Key insight: SMIC at 17.4% falls in orange (tight) zone; Median at 8.7% in green
 
 3. **03_gap_analysis.png** - Breakdown of the hidden gap (what's missing)
    - Visual: Waterfall or stacked showing official + gap + healthy
-   - Use in Segment 3: Part A (what's not counted)
+   - Use in Segment 3: Part A (what's not counted in official baskets)
 
 4. **04_basket_composition.png** - Pie charts showing item distribution
-   - Visual: Three pies showing 13 vs 34 vs 41 items
-   - Use in Segment 3: Part A (composition comparison)
+   - Visual: Three pies showing 13 vs 34 vs 41 items, with consistent color coding
+   - Use in Segment 3: Part A (composition comparison: official vs real vs healthy)
 
-5. **05_healthy_cliff.png** - Remaining budget after health-focused eating
-   - Visual: Shows how healthy eating becomes impossible for low income
-   - Use in Segment 4: Impact section
+5. **05_healthy_cliff.png** - Remaining budget after food costs (legacy)
+   - Visual: Bar chart showing remaining annual budget with essential expense threshold
+   - Use in supporting materials (keeps analysis complete)
 
-6. **06_household_cost_impact.png** - Cost increase ranking by member type (NEW)
-   - Visual: Horizontal bar chart from Baby (+€76) to Senior (+€334)
-   - Use in Segment 3: Part C (household composition intro)
-   - **This is your workhorse chart—clearest visual of the multiplier effect**
+6. **06_family_squeeze.png** ⭐ **NEW & CRITICAL** - How household composition reduces remaining budget
+   - Visual: Clustered bar chart comparing SMIC vs Median, showing base → +baby → +teenager
+   - Key insight: €288 added cost has different impact by income (SMIC loses 24% of margin, Median loses 7%)
+   - Use in Segment 3: Part C (household composition multiplier effect)
+   - **Professional annotation:** Explains why "percentage of income" alone is insufficient; absolute margin matters
+   - **This is your emotional center chart—shows structural impossibility**
 
-7. **07_affordability_by_composition.png** - Composition × income affordability heatmap (NEW)
-   - Visual: Color-coded matrix showing crisis zones (red = impossible)
-   - Use in Segment 3: Part C (where families break)
-   - **Slide 16 in presentation uses this—most powerful visual**
+7. **07_housing_burden.png** ⭐ **NEW & CRITICAL** - Housing cost variation by income (whisker chart)
+   - Visual: Whisker plot showing rent range for SMIC (€600-850/month) vs Median (€1,000-1,300/month)
+   - Key insight: SMIC spends 34-49% of income on housing; after food (€304/month), margin shrinks to €150-300/month
+   - Use in Segment 3: Part C (explains why family composition is mathematically impossible)
+   - **Professional annotation:** Shows why single averages hide variation; housing cost + food cost = no flexibility
+   - **This is your structural context chart—explains the constraint**
 
-8. **08_remaining_budget_composition.png** - Budget remaining after food (NEW)
-   - Visual: Comparison of remaining money after food for different family sizes
-   - Use in supporting materials or report
+---
+
+### **Chart Presentation Flow**
+- Start with 01 (basket gap)
+- Show 02 (income-based crisis)
+- Reference 03-04 (what's missing)
+- **NEW:** Show 06 (family squeeze) → 07 (housing burden) together (they tell the complete story)
+- Use 05 as supporting evidence (health premium)
 
 ---
 

@@ -472,6 +472,173 @@ def create_healthy_cliff_chart(stats):
     plt.savefig(os.path.join(OUTPUT_DIR, '05_healthy_cliff.png'), dpi=150, bbox_inches='tight')
     plt.close()
 
+def create_family_squeeze_chart():
+    """
+    Visualize how household composition (adding family members) reduces remaining budget
+    Comparison: SMIC (crisis income) vs Median (manageable income)
+
+    Data source: household_composition_impact.py analysis
+    Base household: 2 adults + 1 child (age 7-10)
+    """
+    fig, ax = plt.subplots(figsize=(14, 8))
+
+    # Household composition scenarios
+    compositions = ['Base\n(2a+1c)', '+Baby\n(0-2yr)', '+Child\n(3-6yr)', '+Teenager\n(13-18)']
+
+    # Remaining budget after REAL COMPLETE BASKET (€303.65/month)
+    # SMIC: €21,000/year = €1,750/month
+    smic_remaining = [17356, 17280, 17235, 17068]
+
+    # Median: €42,000/year = €3,500/month
+    median_remaining = [41176, 41100, 41055, 40888]
+
+    # Essential expenses threshold (€14,400/year = €1,200/month for SMIC family)
+    essential_threshold = 14400
+
+    x = np.arange(len(compositions))
+    width = 0.35
+
+    # Create bars
+    bars1 = ax.bar(x - width/2, smic_remaining, width, label='SMIC (€21k/year)',
+                  color='#ff6b6b', edgecolor='black', linewidth=1.5, alpha=0.85)
+    bars2 = ax.bar(x + width/2, median_remaining, width, label='Median (€42k/year)',
+                  color='#70ad47', edgecolor='black', linewidth=1.5, alpha=0.85)
+
+    # Add value labels on bars
+    for bars in [bars1, bars2]:
+        for bar in bars:
+            height = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width()/2., height + 500,
+                   f'€{height:,.0f}', ha='center', va='bottom', fontweight='bold', fontsize=9)
+
+    # Add essential expenses threshold line
+    ax.axhline(y=essential_threshold, color='red', linestyle='--', linewidth=2.5,
+              label=f'Min. Essential (€14.4k/year = €1.2k/month)', alpha=0.7)
+
+    # Add annotation zone
+    ax.fill_between([-0.5, 3.5], 0, essential_threshold, alpha=0.08, color='red',
+                    label='Danger Zone: Below essential')
+    ax.fill_between([-0.5, 3.5], essential_threshold, 50000, alpha=0.08, color='green',
+                    label='Above Essential (but tight for SMIC)')
+
+    # Formatting
+    ax.set_ylabel('Remaining Annual Budget (EUR)', fontsize=12, fontweight='bold')
+    ax.set_xlabel('Household Composition', fontsize=12, fontweight='bold')
+    ax.set_title('The Family Squeeze: How Each Member Reduces Remaining Budget\nReal Complete Basket (€303.65/month) Deducted from Annual Income',
+                fontsize=13, fontweight='bold', pad=20)
+    ax.set_xticks(x)
+    ax.set_xticklabels(compositions, fontsize=11)
+    ax.legend(loc='upper right', fontsize=10)
+    ax.set_ylim(0, 45000)
+    ax.grid(axis='y', alpha=0.3)
+
+    # Professional annotation
+    annotation_text = (
+        'Note: SMIC remaining budget shrinks with each family member. After housing (€600-850/month),\n'
+        'utilities, transport, childcare: SMIC family has minimal margin for error. Adding a teenager\n'
+        'or senior parent pushes remaining budget dangerously close to essential expenses threshold.'
+    )
+    ax.text(0.5, -0.15, annotation_text, transform=ax.transAxes, fontsize=9,
+           ha='center', va='top', style='italic', bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.3))
+
+    plt.tight_layout()
+    plt.savefig(os.path.join(OUTPUT_DIR, '06_family_squeeze.png'), dpi=150, bbox_inches='tight')
+    plt.close()
+
+def create_housing_burden_chart():
+    """
+    Visualize housing cost variation by income level using whisker chart
+    Shows why housing costs matter when analyzing food affordability
+
+    Data: Typical Paris rent ranges (Auchan/Carrefour neighborhoods)
+    Household: 2 adults + 1 child apartment (2-3 bedroom)
+    """
+    fig, ax = plt.subplots(figsize=(12, 7))
+
+    # Income levels for comparison
+    income_levels = ['SMIC\n(€21k/year)', 'Median\n(€42k/year)']
+
+    # Housing cost ranges (monthly, then annualized)
+    # SMIC: typical range €600-850/month
+    smic_min = 600 * 12   # €7,200/year
+    smic_med = 725 * 12   # €8,700/year
+    smic_max = 850 * 12   # €10,200/year
+
+    # Median: typical range €1000-1300/month
+    median_min = 1000 * 12   # €12,000/year
+    median_med = 1150 * 12   # €13,800/year
+    median_max = 1300 * 12   # €15,600/year
+
+    # As percentage of income
+    smic_income = 21000
+    median_income = 42000
+
+    smic_pct_min = (smic_min / smic_income) * 100
+    smic_pct_med = (smic_med / smic_income) * 100
+    smic_pct_max = (smic_max / smic_income) * 100
+
+    median_pct_min = (median_min / median_income) * 100
+    median_pct_med = (median_med / median_income) * 100
+    median_pct_max = (median_max / median_income) * 100
+
+    x_pos = [0, 1]
+
+    # Draw whisker plots (range from min to max, with median line)
+    # SMIC whisker
+    ax.plot([0, 0], [smic_pct_min, smic_pct_max], 'o-', color='#ff6b6b', linewidth=3, markersize=8)
+    ax.plot(0, smic_pct_min, 's', color='#ff6b6b', markersize=10, label='Min')
+    ax.plot(0, smic_pct_max, 's', color='#ff6b6b', markersize=10, label='Max')
+    ax.plot(0, smic_pct_med, 'D', color='#d32f2f', markersize=12, linewidth=2, label='Median')
+
+    # Median whisker
+    ax.plot([1, 1], [median_pct_min, median_pct_max], 'o-', color='#70ad47', linewidth=3, markersize=8)
+    ax.plot(1, median_pct_min, 's', color='#70ad47', markersize=10)
+    ax.plot(1, median_pct_max, 's', color='#70ad47', markersize=10)
+    ax.plot(1, median_pct_med, 'D', color='#388e3c', markersize=12, linewidth=2)
+
+    # Add threshold lines
+    ax.axhline(y=20, color='orange', linestyle='--', linewidth=2, alpha=0.6, label='Tight Zone (20% income)')
+    ax.axhline(y=30, color='red', linestyle='--', linewidth=2, alpha=0.6, label='Crisis Zone (30% income)')
+
+    # Add value annotations
+    ax.text(-0.15, smic_pct_min - 0.5, f'{smic_pct_min:.1f}%', fontsize=9, ha='right')
+    ax.text(-0.15, smic_pct_max + 0.5, f'{smic_pct_max:.1f}%', fontsize=9, ha='right')
+    ax.text(-0.15, smic_pct_med, f'{smic_pct_med:.1f}%', fontsize=10, ha='right', fontweight='bold')
+
+    ax.text(1.15, median_pct_min - 0.5, f'{median_pct_min:.1f}%', fontsize=9, ha='left')
+    ax.text(1.15, median_pct_max + 0.5, f'{median_pct_max:.1f}%', fontsize=9, ha='left')
+    ax.text(1.15, median_pct_med, f'{median_pct_med:.1f}%', fontsize=10, ha='left', fontweight='bold')
+
+    # Formatting
+    ax.set_ylabel('Housing Cost as % of Annual Income', fontsize=12, fontweight='bold')
+    ax.set_title('Housing Burden by Income Level: Why Cost Variation Matters\nTypical 2-3 Bedroom Apartment Rent in Paris Region',
+                fontsize=13, fontweight='bold', pad=20)
+    ax.set_xticks(x_pos)
+    ax.set_xticklabels(income_levels, fontsize=11, fontweight='bold')
+    ax.set_ylim(0, 40)
+    ax.grid(axis='y', alpha=0.3)
+
+    # Add legend with actual rent ranges
+    legend_labels = [
+        'SMIC rent range: €600-850/month (€7.2k-10.2k/year)',
+        'Median rent range: €1,000-1,300/month (€12k-15.6k/year)'
+    ]
+    ax.text(0.5, -0.12, '\n'.join(legend_labels), transform=ax.transAxes, fontsize=9,
+           ha='center', va='top', style='italic', bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.3))
+
+    # Professional annotation
+    annotation = (
+        'SMIC workers spend 34-49% of income on housing (using only real food, no luxury).\n'
+        'This leaves minimal budget for utilities, childcare, transport, and healthcare.\n'
+        'Adding household members compounds the crisis because food costs increase while housing % of income stays high.'
+    )
+    ax.text(0.5, -0.22, annotation, transform=ax.transAxes, fontsize=9,
+           ha='center', va='top', style='italic', bbox=dict(boxstyle='round', facecolor='mistyrose', alpha=0.3))
+
+    plt.tight_layout()
+    plt.savefig(os.path.join(OUTPUT_DIR, '07_housing_burden.png'), dpi=150, bbox_inches='tight')
+    plt.close()
+
 def generate_analysis_report(stats):
     """Generate text analysis report"""
     report = f"""
@@ -690,6 +857,12 @@ if __name__ == "__main__":
     create_healthy_cliff_chart(stats)
     print("[OK] Created healthy cliff chart")
 
+    create_family_squeeze_chart()
+    print("[OK] Created family squeeze chart")
+
+    create_housing_burden_chart()
+    print("[OK] Created housing burden chart")
+
     report = generate_analysis_report(stats)
 
     # Save report
@@ -705,4 +878,6 @@ if __name__ == "__main__":
     print(f"  - 03_gap_analysis.png")
     print(f"  - 04_basket_composition.png")
     print(f"  - 05_healthy_cliff.png")
+    print(f"  - 06_family_squeeze.png")
+    print(f"  - 07_housing_burden.png")
     print(f"  - BASKET_ANALYSIS_REPORT.txt")

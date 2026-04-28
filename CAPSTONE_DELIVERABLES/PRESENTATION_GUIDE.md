@@ -211,37 +211,52 @@
 - **Simple bar chart:** SMIC vs Median spending on food as % of income
 - **Optional:** Remaining budget breakdown by category (rent, food, transport, utilities)
 
-**Part C: The Hidden Crisis - Household Composition (2 minutes)**
+**Part C: The Hidden Crisis - Household Composition (2.5 minutes)**
 
 **Script:**
 > "Now, here's what makes this even more urgent.
 >
-> These are individual family scenarios. But families grow. Families change. What happens when a family adds a member?
+> **Look at the Family Squeeze visualization.** [Point to 06_family_squeeze.png]
 >
-> [Show household composition visualization]
+> This shows what happens when a SMIC family—that's someone making €21,000 a year—adds a family member.
 >
-> A couple with one child (2 adults + 1 child) spends 17.4% of their SMIC income on real food. Manageable.
+> Base household: 2 adults + 1 child. Remaining budget after food costs: €17,356 per year.
 >
-> Add a baby? Now it's 21.7%. Still tight, but possible.
+> Now add a teenager. The teenager costs an extra €288/month to feed. 
 >
-> Add a teenager? Now it's **33.8% of income.** That's a crisis.
-> 
-> There's no money left for rent. You cannot afford both healthy food and housing.
+> The SMIC family loses €288 of remaining budget. Now they have €17,068.
 >
-> Add an elderly parent moving in? **36.4% of income.** Catastrophic.
+> **But here's the cruelty: that remaining budget must cover housing.**
 >
-> The cruelest part: *Families don't choose their composition.* They have children. They care for aging parents. The marketplace doesn't care about your family structure.
+> [Point to 07_housing_burden.png] Look at housing costs. A SMIC family pays €600 to €850 per month for a basic apartment. That's €7,200 to €10,200 per year.
 >
-> For low-income families, growing your family doesn't just cost more money—*it creates a poverty multiplication effect.*
+> So after food (€303.65/month) and housing (€725/month average), they have maybe €200 remaining.
 >
-> A senior is 4.4x more expensive to add than a baby. But families don't say, 'Let's not care for grandma.' They absorb it and go hungry.
+> Add utilities. Add transport. Add childcare.
 >
-> Official statistics never capture this. Government policy never addresses it. It's invisible."
+> **There is literally no margin left.**
+>
+> And here's what makes it even worse: *Families don't choose composition.*
+>
+> They don't say, 'Let's not have children because a teenager costs 4.4 times more than a baby.'
+>
+> They *have* children. They *care* for aging parents. And each time they do, the remaining budget—which was already razor-thin—gets squeezed even more.
+>
+> This isn't a problem official statistics measure. Government policy never addresses it. For SMIC workers, this isn't hardship. This is the mathematical impossibility of feeding and housing a family."
 
-**Visual During This:**
-- **Show 06_household_cost_impact.png** - the ranked bar chart (baby to senior)
-- **Show 07_affordability_by_composition.png** - the heatmap showing crisis zones (red = impossible)
-- **Optional animated transition:** Visual showing SMIC worker adding family members and affordability percentages climbing (manageable → tight → crisis → impossible)
+**Visuals During This:**
+- **Show 06_family_squeeze.png** - SMIC vs Median comparison showing how each member reduces remaining budget
+  - Point to: Base → +Baby → +Teenager progression
+  - Highlight: "€17,356 down to €17,068—€288 loss"
+  - Compare: "Median family barely notices. SMIC family loses one-third of margin."
+  
+- **Show 07_housing_burden.png** - housing cost variation (whisker chart)
+  - Point to: SMIC range (€600-850) and Median range (€1,000-1,300)
+  - Explain: "SMIC family spends 34-49% of income just on housing. Median spends 29-37%."
+  - Key insight: "When housing takes €725/month and food takes €304/month, there's almost nothing left."
+
+**Emotional Anchor:**
+> "A senior is 4.4x more expensive than a baby. But families don't say, 'Let's not care for grandma.' They absorb it and go hungry."
 
 **Transition Phrase:**
 > "So what does this mean? Why does this matter for a capstone project?"
