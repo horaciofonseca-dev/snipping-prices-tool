@@ -109,14 +109,26 @@ Location: `CAPSTONE_DELIVERABLES/` and `capstone/synthetic_data/basket_analysis/
    - **Professional annotation:** Shows why single averages hide variation; housing cost + food cost = no flexibility
    - **This is your structural context chart—explains the constraint**
 
+8. **08_complete_budget_reality.png** ⭐⭐ **BREAKTHROUGH INSIGHT** - All essential monthly costs comparison (stacked bar charts)
+   - Visual: Side-by-side stacked bar charts showing SMIC (€1,750) vs Median (€3,500) families with 12 cost categories
+   - Key insight: SMIC families face a €74/month DEFICIT from essential costs alone
+     - SMIC total costs: €1,824/month (housing €725 + food €304 + utilities €150 + childcare €200 + transport €100 + clothing €90 + healthcare €75 + phone €40 + insurance €45 + school supplies €30 + household €40 + personal care €25)
+     - Income: €1,750/month
+     - Deficit: **€74/month** (before emergencies, savings, or debt repayment)
+     - Median surplus: €1,251/month by comparison
+   - Use in Segment 3: Part C/D (explains why government transfers are STRUCTURAL NECESSITY, not supplemental help)
+   - **Professional annotation:** "SMIC families cannot survive on SMIC income alone. CAF (housing allowance) and child benefits are mathematically required to avoid deficit spending. This explains reliance on government transfers as structural necessity, not cultural dependency."
+   - **This is your policy-changing chart—demonstrates systemic income insufficiency**
+
 ---
 
 ### **Chart Presentation Flow**
 - Start with 01 (basket gap)
 - Show 02 (income-based crisis)
 - Reference 03-04 (what's missing)
-- **NEW:** Show 06 (family squeeze) → 07 (housing burden) together (they tell the complete story)
+- **NEW:** Show 06 (family squeeze) → 07 (housing burden) → **08 (complete budget reality)** together (they tell the complete story)
 - Use 05 as supporting evidence (health premium)
+- **08 is your closing visual—shows the structural reality underlying all previous charts**
 
 ---
 
@@ -315,12 +327,12 @@ Keep these numbers top-of-mind:
 - Gap: 4.4x (342% difference)
 
 **Member Cost Impact (monthly additions to real basket):**
-- Baby (0-2): +€75.91
-- Child (3-6): +€121.46
-- Child (7-12): +€136.64
-- Teenager: +€288.47
-- Adult: +€303.65
-- Senior (65+): +€334.01
+- Baby (0-2): +€75.91 (€911/year)
+- Child (3-6): +€121.46 (€1,457/year)
+- Child (7-12): +€136.64 (€1,640/year)
+- Teenager: +€288.47 (€3,461/year)
+- Adult: +€303.65 (€3,644/year)
+- Senior (65+): +€334.01 (€4,008/year)
 
 **Income Levels (annual/monthly):**
 - SMIC: €21,000 / €1,750
@@ -328,11 +340,22 @@ Keep these numbers top-of-mind:
 - Median: €42,000 / €3,500
 - Upper Middle: €65,000 / €5,417
 
-**Affordability Crisis Points:**
+**Affordability Crisis Points (Food Only):**
 - SMIC worker + real basket: 17.4% of income
 - SMIC worker + teenager: 33.8% of income (CRISIS)
 - SMIC worker + senior: 36.4% of income (CATASTROPHIC)
 - Median worker + real basket: 8.7% of income (EXCELLENT)
+
+**THE STRUCTURAL REALITY (Complete Budget):**
+- SMIC total monthly expenses: €1,824 (housing, food, utilities, childcare, transport, clothing, healthcare, phone, insurance, school, household, personal care)
+- SMIC monthly income: €1,750
+- **SMIC monthly deficit: -€74 (before emergencies or savings)**
+- Median total monthly expenses: €2,249
+- Median monthly income: €3,500
+- **Median monthly surplus: €1,251**
+- **Structural gap between SMIC and Median: €1,325/month**
+- Government transfers (CAF, housing allowance): €300-550/month (SURVIVAL REQUIREMENT)
+- With government transfers, SMIC breaks even or has small surplus (€50-500/month)
 
 ---
 
