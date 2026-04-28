@@ -4,14 +4,16 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 
-# Household composition data (Real Complete Basket)
+# Household composition data (Real Complete Basket - Per-Capita Methodology)
+# Base: 2 adults + 1 child = 303.65/month / 2.45 AE = 123.94/month per AE
+percapita_cost = 123.94
 members_data = {
-    'Baby (0-2)': {'cost_inc': 75.91, 'pct_inc': 25.0},
-    'Child (3-6)': {'cost_inc': 121.46, 'pct_inc': 40.0},
-    'Child (7-12)': {'cost_inc': 136.64, 'pct_inc': 45.0},
-    'Teenager': {'cost_inc': 288.47, 'pct_inc': 95.0},
-    'Adult': {'cost_inc': 303.65, 'pct_inc': 100.0},
-    'Senior (65+)': {'cost_inc': 334.01, 'pct_inc': 110.0},
+    'Baby (0-2)': {'cost_inc': 30.98, 'pct_inc': 25.0, 'mult': 0.25},
+    'Child (3-6)': {'cost_inc': 49.58, 'pct_inc': 40.0, 'mult': 0.40},
+    'Child (7-12)': {'cost_inc': 55.77, 'pct_inc': 45.0, 'mult': 0.45},
+    'Teenager': {'cost_inc': 117.74, 'pct_inc': 95.0, 'mult': 0.95},
+    'Adult': {'cost_inc': 123.94, 'pct_inc': 100.0, 'mult': 1.0},
+    'Senior (65+)': {'cost_inc': 136.33, 'pct_inc': 110.0, 'mult': 1.10},
 }
 
 base_cost = 303.65  # Real basket base
